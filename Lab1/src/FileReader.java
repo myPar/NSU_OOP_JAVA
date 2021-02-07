@@ -21,7 +21,7 @@ public class FileReader {
         while (sc.hasNextLine()) {
             String str = sc.nextLine();
 
-            for (String word : str.split("[^{a-zA-Zа-яА-Я}]")) {
+            for (String word : str.split("[^a-zA-Zа-яА-Я0-9]+")) {
                 statistic.addWord(word);
             }
         }

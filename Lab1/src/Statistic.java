@@ -16,19 +16,13 @@ public class Statistic {
     public void addWord(String word) {
         assert(word != null);
         // put new word in map
-        Integer value = inputData.get(word);
-
-        if (value != null) {
-            inputData.put(word, value + 1);
-        }
-        else {
-            inputData.put(word, 0);
-        }
+        inputData.merge(word, 1, Integer::sum);
         // increment word count
         wordsCount++;
     }
     // convert inputData to outputData
     public void makeOutputData() {
+
         // iterate map
         for (HashMap.Entry<String, Integer> entry : inputData.entrySet()) {
             String word = entry.getKey();
@@ -59,26 +53,35 @@ public class Statistic {
         catch (IOException e) {
             throw new ParserException("Statistics", "can't create a FileWriter - file is invalid");
         }
-        // iterate outputMap
-        for (Integer frequency : outputData.keySet()) {
-            LinkedList<String> wordList = outputData.get(frequency);
-
-            // print words in current word list
-            for (String word : wordList) {
-                printWord(word, frequency, writer);
-            }
-        }
-    }
-    // help method for formatting word printing
-    private void printWord(String word, Integer frequency, FileWriter writer) throws ParserException {
-        float percentFrequency = (float) frequency / wordsCount * 100;
-
+        // write data
         try {
-            writer.write(word + "," + frequency + "," + percentFrequency + "\n");
+            writer.write("word,count,percent frequency\n");
+            // iterate outputMap
+            for (Integer frequency : outputData.descendingKeySet()) {
+                LinkedList<String> wordList = outputData.get(frequency);
+                // print words in current word list
+                for (String word : wordList) {
+                    printWord(word, frequency, writer);
+                }
+            }
         }
         catch (IOException e) {
             throw new ParserException("Statistics", "can't write data to file");
         }
+        // close fileWriter
+        try {
+            writer.flush();
+            writer.close();
+        }
+        catch (IOException e) {
+            throw new ParserException("Statistics", "can't close FileWriter");
+        }
+    }
+    // help method for formatting word printing
+    private void printWord(String word, Integer frequency, FileWriter writer) throws IOException {
+        float percentFrequency = (float) frequency / wordsCount * 100;
+
+        writer.write(word + "," + frequency + "," + percentFrequency + "\n");
     }
     // constructor
     Statistic() {

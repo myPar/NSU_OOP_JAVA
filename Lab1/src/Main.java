@@ -5,7 +5,7 @@ public class Main {
         int argNumber = args.length;
 
         if (argNumber != 2) {
-            System.err.println("invalid argument number, should be 2");
+            System.err.println("invalid argument number, should be 2\n");
         }
         else {
             String inputFileName = args[0];
