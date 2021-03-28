@@ -1,20 +1,60 @@
 package Calculator;
 
 import Command.Command;
+import ExecutionContext.ExecutionContext;
+import UserException.CalculatorException;
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Calculator {
-// inner static class for command parsing
-    private static class CommandParser {
-        Command parseCommand(String string) {
-            return null;
-        }
-    }
 // main method
     public void calculate(Scanner sc) {
-        // create command parser object
-        CommandParser parser = new CommandParser();
-        // config Command (set names for commands)
-        Command.config();
+        assert(sc != null);
+        // try to config Command (set names for commands)
+        try {
+            Command.config();
+        }
+        catch (Command.Command.CommandException e) {
+            // fatal exception
+            e.printExceptionMessage();
+            System.err.println("fatal exception");
+            System.exit(1);
+        }
+        // create execution context (Stack is empty)
+        ExecutionContext context = new ExecutionContext();
+
+        while (sc.hasNextLine()) {
+            String line = sc.nextLine();
+            String[] commandData = line.split(" ");
+
+            String commandName = commandData[0];
+            // check comment case
+            if (commandName.charAt(0) == '#') {
+                // continue reading
+                continue;
+            }
+            String[] args = Arrays.copyOfRange(commandData, 1, commandData.length);
+
+            Command command = null;
+            // try to create command
+            try {
+                command = Command.factoryMethod(commandName);
+            }
+            catch (CalculatorException e) {
+                // fatal exception
+                e.printExceptionMessage();
+                System.err.println("fatal exception");
+                System.exit(1);
+            }
+            // try to execute command
+            try {
+                command.execute(context, args);
+            }
+            catch (CalculatorException e) {
+                // not fatal command execution exception
+                e.printExceptionMessage();
+            }
+        }
     }
 }
