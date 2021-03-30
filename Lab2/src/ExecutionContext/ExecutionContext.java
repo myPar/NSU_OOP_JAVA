@@ -1,9 +1,25 @@
 package ExecutionContext;
 
+import UserException.CalculatorException;
+
 import java.util.HashMap;
 import java.util.Stack;
 
 public class ExecutionContext {
+// exception class
+    public static class ContextException extends CalculatorException {
+        static {
+            types = new String[2];
+            types[0] = "stack operation";
+            types[1] = "map operation";
+        }
+        // exception constructor
+        public ContextException(int t, String m) {
+            assert(t >= 0 && t < types.length);
+            message = m;
+            typeValue = types[t];
+        }
+    }
 // fields
     // stack of numbers
     private Stack<Double> numberStack;
@@ -15,24 +31,25 @@ public class ExecutionContext {
         numberStack.push(value);
     }
     // pop value from stack
-    public double popValue() {
+    public double popValue() throws ContextException {
+        if (numberStack.isEmpty()) {
+            throw new ContextException(0, "can't pop the value from empty stack");
+        }
         return numberStack.pop();
     }
     // add new parameter to map
-    public void addParameter(String name, Double value) throws Exception {
+    public void addParameter(String name, Double value) throws ContextException {
         // check consistence of parameter with such name
         if (parameterMap.containsKey(name)) {
-            // TODO add user exception
-            throw new Exception("");
+            throw new ContextException(1, "can't add the variable; the variable with such name: '" + name + "' is already consist");
         }
         // add new parameter to the map
         parameterMap.put(name, value);
     }
     // get value of the parameter with such name
-    public double getParameter(String name) throws Exception {
+    public double getParameter(String name) throws ContextException {
         if (!parameterMap.containsKey(name)) {
-            // TODO add user exception
-            throw new Exception("");
+            throw new ContextException(1, "can't get the variable; no variable with such name: " + "'" + name + "'");
         }
         return parameterMap.get(name);
     }

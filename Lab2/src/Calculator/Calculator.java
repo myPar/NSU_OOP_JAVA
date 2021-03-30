@@ -15,7 +15,7 @@ public class Calculator {
         try {
             Command.config();
         }
-        catch (Command.Command.CommandException e) {
+        catch (Command.CommandException e) {
             // fatal exception
             e.printExceptionMessage();
             System.err.println("fatal exception");

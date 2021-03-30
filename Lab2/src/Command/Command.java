@@ -40,7 +40,7 @@ static {
 }
 // methods
     // main abstract method (command execution)
-    public abstract void execute(ExecutionContext context, String[] args) throws CommandException;
+    public abstract void execute(ExecutionContext context, String[] args) throws CalculatorException;
     // Command-factory configuration method
     public static void config() throws CommandException {
         assert(resourceName != null);
@@ -56,7 +56,7 @@ static {
         // parse config file
         while (sc.hasNextLine()) {
             String line = sc.nextLine();
-            String[] arr = line.split("");
+            String[] arr = line.split(" ");
 
             // check length
             if (arr.length != 2) {
