@@ -12,7 +12,10 @@ public class Add extends Command {
         if (args.length != 0) {
             throw new CommandException(2, "No arguments should be in command 'Add'");
         }
-        // context exception may be thrown
+        // check stack size
+        if (context.getStackSize() < 2) {
+            throw new CommandException(2, "Command 'Add': not enough elements in the stack");
+        }
         double arg1 = context.popValue();
         double arg2 = context.popValue();
 

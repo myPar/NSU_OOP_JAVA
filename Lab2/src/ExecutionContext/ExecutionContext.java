@@ -26,6 +26,15 @@ public class ExecutionContext {
     // map: key - parameter name; value - parameter value
     private HashMap<String, Double> parameterMap;
 // methods
+    // get stack's size
+    public int getStackSize() { return numberStack.size(); }
+    // peek value from the stack
+    public double peekValue() throws ContextException {
+        if (numberStack.isEmpty()) {
+            throw new ContextException(0, "can't peek the value from empty stack");
+        }
+        return numberStack.peek();
+    }
     // push value to the Stack
     public void pushValue(Double value) {
         numberStack.push(value);

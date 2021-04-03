@@ -1,13 +1,24 @@
 package Command;
 
 import ExecutionContext.ExecutionContext;
+import UserException.CalculatorException;
 
 public class Push extends Command {
     @Override
-    public void execute(ExecutionContext context, String[] args) throws CommandException {
+    public void execute(ExecutionContext context, String[] args) throws CalculatorException {
+        assert context != null;
+        assert args != null;
 
-    }
-    public Push() {
-
+        int len = args.length;
+        // check args number
+        if (len != 1) {
+            throw new CommandException(2, "invalid number of arguments in command 'Push': " +
+                                        len + ", but should be 1");
+        }
+        String parameterName = args[0];
+        // try to get parameter
+        double value = context.getParameter(parameterName);
+        // add parameter value to execution context's stack
+        context.pushValue(value);
     }
 }
