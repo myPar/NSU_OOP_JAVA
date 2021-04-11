@@ -8,6 +8,7 @@ import java.util.Stack;
 public class ExecutionContext {
 // exception class
     public static class ContextException extends CalculatorException {
+        private static String[] types;
         static {
             types = new String[2];
             types[0] = "stack operation";
@@ -66,5 +67,16 @@ public class ExecutionContext {
     public ExecutionContext() {
         numberStack = new Stack<>();
         parameterMap = new HashMap<>();
+    }
+// methods for testers
+    // get value from the stack by idx
+    public double getValue(int idx) {
+        assert idx >= 0 && idx < numberStack.size();
+        return numberStack.get(idx);
+    }
+    // get parameter value from the map by name
+    public double getParameterUnhandled(String name) {
+        assert parameterMap.containsKey(name);
+        return parameterMap.get(name);
     }
 }

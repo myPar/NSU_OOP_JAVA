@@ -18,7 +18,13 @@ public class Div extends  Command {
         }
         double arg1 = context.popValue();
         double arg2 = context.popValue();
-
+        // check division by zero
+        if (arg2 == 0) {
+            // push values back
+            context.pushValue(arg2);
+            context.pushValue(arg1);
+            throw new CommandException(2, "Command 'Div': division by zero");
+        }
         context.pushValue(arg1 / arg2);
     }
 }

@@ -16,8 +16,16 @@ public class Push extends Command {
                                         len + ", but should be 1");
         }
         String parameterName = args[0];
-        // try to get parameter
-        double value = context.getParameter(parameterName);
+        double value;
+        // arg can be a double value or a parameter's name
+        try {
+            // check is parameter a double value
+            value = Double.parseDouble(parameterName);
+        }
+        catch (NumberFormatException e) {
+            // try to get parameter's value by name
+            value = context.getParameter(parameterName);
+        }
         // add parameter value to execution context's stack
         context.pushValue(value);
     }
