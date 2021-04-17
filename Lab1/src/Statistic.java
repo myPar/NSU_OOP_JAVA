@@ -53,8 +53,8 @@ public class Statistic {
         catch (IOException e) {
             throw new ParserException("Statistics", "can't create a FileWriter - file is invalid");
         }
-        // write data
-        try {
+        // write data (using try-with-resources)
+        try (writer) {
             writer.write("word,count,percent frequency\n");
             // iterate outputMap
             for (Integer frequency : outputData.descendingKeySet()) {
@@ -67,14 +67,6 @@ public class Statistic {
         }
         catch (IOException e) {
             throw new ParserException("Statistics", "can't write data to file");
-        }
-        // close fileWriter
-        try {
-            writer.flush();
-            writer.close();
-        }
-        catch (IOException e) {
-            throw new ParserException("Statistics", "can't close FileWriter");
         }
     }
     // help method for formatting word printing
