@@ -19,11 +19,13 @@ public class GUI {
     private GraphicFigure figure;
     private GraphicMap map;
 
-    private static final int cellSize = 15;
+    private static final int cellSize = 20;
+    private static final int gamePanelWidth = 500;
+    private static final int gamePanelHeight = 700;
 
     private class MapPanel extends JPanel {
         MapPanel() {
-            setSize(500, 700);
+            setSize(gamePanelWidth, gamePanelHeight);
         }
         private void paintCell(int x, int y, GameModel.Colour colour, Graphics g) {
             // set colour
@@ -112,7 +114,6 @@ public class GUI {
         @Override
         public void keyReleased(KeyEvent keyEvent) {}
     }
-
 // constructor
     public GUI(Controller reference) {
         // init controller reference
@@ -135,20 +136,9 @@ public class GUI {
     public void viewGraphicModel(GraphicMap map, GraphicFigure figure) {
         this.map = map;
         this.figure = figure;
-/*
-        // remove old panel
-        if (this.gamePanel != null) {
-            gameFrame.remove(this.gamePanel);
-        }
-        // add new Panel
-        MapPanel gamePanel = new MapPanel();
-        this.gamePanel = gamePanel;
-
- */
+        // repaint game panel
         gamePanel.repaint();
- //       gameFrame.add(gamePanel);
         // view
         gameFrame.setVisible(true);
-
     }
 }

@@ -9,6 +9,32 @@ public class GameModel {
     private static final String figureConfigFileName = "figure_config_file";
     private static final int figureTypeCount = 7;
     private static final int figureColourCount = 4;
+    private static final int pointsIncrement = 100;
+// fields:
+    // game map object
+    private Map gameMap;
+    // current falling figure object
+    private Figure fallingFigure;
+    // line destructor (points payer) object
+    private LineDestructor lineDestructor;
+    // top figure cell Y-coordinate
+    private int topMapY;
+    private int totalPoints;
+// constructor
+    public GameModel(int mapWidth, int mapHeight) {
+        // create map
+        gameMap = new Map(mapWidth, mapHeight);
+        // no falling figure yet
+        fallingFigure = null;
+        // config figure class
+        Figure.config(figureConfigFileName);
+        // create line destructor
+        lineDestructor = new LineDestructor();
+        // topMapY is equal to map height - 1 at the start of the game
+        topMapY = mapHeight;
+        // no points yet
+        totalPoints = 0;
+    }
 // enums:
     public enum Colour {WHITE, RED, GREEN, BLUE, YELLOW}
 // static classes of Game Model: game Map, game cell, falling figure
@@ -229,7 +255,13 @@ public class GameModel {
             for (Cell cell : figureCells) {
                 int x = cell.x;
                 int y = cell.y;
+                // check is coordinates out of map bounds
+                if (x < 0 || x >= gameMap.width || y >= gameMap.height) {
+                    // update rotation state back
+                    rotationUpdate(rotationState);
 
+                    return true;
+                }
                 // check consistence of figure cell on current cell place
                 if (gameMap.map[x][y].hasFigure) {
                     // update rotation state back
@@ -298,19 +330,58 @@ public class GameModel {
             return figureCells[cellIdx].y;
         }
     }
-// fields:
-    // game map object
-    private Map gameMap;
-    // current falling figure object
-    private Figure fallingFigure;
-// constructor
-    public GameModel(int mapWidth, int mapHeight) {
-        // create map
-        gameMap = new Map(mapWidth, mapHeight);
-        // no falling figure yet
-        fallingFigure = null;
-        // config figure class
-        Figure.config(figureConfigFileName);
+    // help class for points accrual and line's destructuring
+    private class LineDestructor {
+        // main method of points paying and line destructing
+        void checkLines(int lowY, int highY) {
+            int fullLineCount = 0;
+
+            // check lines from lowY to highY (ATTENTION!!!! : highY < lowY because of Y coordinate orientation)
+            for (int y = lowY; y >= highY; y--) {
+                boolean isLineFull = true;
+
+                // check if all cells in line has figure
+                for (int x = 0; x < gameMap.width; x++) {
+                    if (!gameMap.map[x][y].hasFigure) {
+                        isLineFull = false;
+                        break;
+                    }
+                }
+                if (isLineFull) {
+                    // increment full lines count
+                    fullLineCount++;
+                    // increment points
+                    totalPoints += pointsIncrement;
+                }
+                else {
+                    break;
+                }
+            }
+            // remove full lines
+            if (fullLineCount > 0) {
+                // replace line lowY - i on line lowY - fullLineCount - i
+                int moveLineCount = (lowY - fullLineCount + 1) - topMapY;
+
+                for (int i = 0; i < moveLineCount; i++) {
+                    replaceLine(lowY - fullLineCount - i,lowY - i);
+                }
+                // increment topMapY on number of full lines
+                topMapY += fullLineCount;
+            }
+        }
+        // cut srcY line and paste it on dstY line
+        private void replaceLine(int srcY, int dstY) {
+            for (int x = 0; x < gameMap.width; x++) {
+                Cell srcCell = gameMap.map[x][srcY];
+                Cell dstCell = gameMap.map[x][dstY];
+                // copy fields values from src Cell to dst Cell:
+                dstCell.hasFigure = srcCell.hasFigure;
+                dstCell.colour = srcCell.colour;
+                // clear fields values for src Cell
+                srcCell.colour = Colour.WHITE;
+                srcCell.hasFigure = false;
+            }
+        }
     }
 // methods which Controller called
     // rotate figure
@@ -376,10 +447,24 @@ public class GameModel {
     // merge fell figure with game map
     public void mergeFigure() {
         assert  fallingFigure != null;
+        int lowY = -1;
+        int highY = 10000;
 
         for (Cell cell: fallingFigure.figureCells) {
             int x = cell.x;
             int y = cell.y;
+            // update lowY
+            if (lowY < y) {
+                lowY = y;
+            }
+            // update highY
+            if (highY > y) {
+                highY = y;
+            }
+            // update topMapY
+            if (topMapY > y) {
+                topMapY = y;
+            }
             // set hasFigure field in 'true' for each cells under figureCells
             gameMap.map[x][y].hasFigure = true;
             // set colour field on fallingFigure colour
@@ -387,8 +472,8 @@ public class GameModel {
         }
         // delete falling figure
         fallingFigure = null;
+        lineDestructor.checkLines(lowY, highY);
     }
-
 // methods which GUI calls:
     public GraphicMap getGraphicMap() {
         assert gameMap != null;
