@@ -11,8 +11,8 @@ import static java.lang.Thread.sleep;
 
 public class Controller {
 // delta time constants
-    private final long gameDeltaTime = 10000;
-    private final long verticalMoveDeltaTime = 10000;
+    private final long gameDeltaTime = 10;
+    private final long verticalMoveDeltaTime = 500;
 // message queue (from GUI)
     private Queue<ControllerMessage> messageQueue;
 // constructor
@@ -22,8 +22,10 @@ public class Controller {
     }
     public void runGame() throws InterruptedException {
         GameModel model = new GameModel(10, 20);
-        GUI gameGUI = new GUI();
-        long startTime = System.nanoTime();
+        model.spawn();
+
+        GUI gameGUI = new GUI(this);
+        long startTime = System.currentTimeMillis();
         long curTime;
 
         while (true) {
@@ -32,7 +34,7 @@ public class Controller {
             // update model
             updateModel(message, model);
             // get current time
-            curTime = System.nanoTime();
+            curTime = System.currentTimeMillis();
             // if current delta time > verticalMoveDeltaTime: update y coordinate of figure
             if (curTime - startTime >= verticalMoveDeltaTime) {
                 // move figure down
@@ -46,7 +48,7 @@ public class Controller {
                     model.spawn();
                 }
                 // update start time
-                startTime = System.nanoTime();
+                startTime = System.currentTimeMillis();
             }
             // view graphic model
             gameGUI.viewGraphicModel(model.getGraphicMap(), model.getGraphicFigure());

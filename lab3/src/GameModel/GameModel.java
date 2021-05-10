@@ -10,7 +10,7 @@ public class GameModel {
     private static final int figureTypeCount = 7;
     private static final int figureColourCount = 4;
 // enums:
-    enum Colour {WHITE, RED, GREEN, BLUE, YELLOW}
+    public enum Colour {WHITE, RED, GREEN, BLUE, YELLOW}
 // static classes of Game Model: game Map, game cell, falling figure
     // Game map class
     private static class Map implements GraphicMap {
@@ -74,17 +74,18 @@ public class GameModel {
         private Cell[] figureCells; // only figure cells
         private static int[][][][] rotations; // rotation states array
         private static final int rotateStateNumber = 4; // there is 4 rotation states
-        private static final int figureCellsNumber = 4;
+        private static final int figureCellsNumber = 4; // figure consist from 4 cells
         private int type;   // figure type (idx in rotations array)
         private int dimension;  // cell array dimension
         private Colour colour;
-        private int rotationState;
+        private int rotationState;  // current rotation state (from 0 to 4)
+        private static boolean isConfigured = false; // flag of configuration of rotation state array
 
         // config method
         static void config(String configFileName) {
             InputStream dataStream = Figure.class.getResourceAsStream(configFileName);
             if (dataStream == null) {
-                System.err.println("Fatal: Can't config Figure class");
+                System.err.println("Fatal: Can't config Figure class, file is invalid");
                 System.exit(1);
             }
             // create scanner
@@ -111,9 +112,12 @@ public class GameModel {
                     }
                 }
             }
+            // Rotation state array has been configured
+            isConfigured = true;
         }
         // constructor
         Figure(int type, Colour colour) {
+            assert Figure.isConfigured;
             assert type >= 0 && type < figureTypeCount;
             this.type = type;
             this.dimension = rotations[type][0].length;
@@ -130,7 +134,6 @@ public class GameModel {
                     // init fields
                     cell.x = x;
                     cell.y = y;
-                    cell.colour = colour;
                 }
             }
             // set 0's rotation state
@@ -146,7 +149,7 @@ public class GameModel {
             }
         }
         void moveRight() {   // move figure right method
-            // update y coordinates for all cells
+            // update x coordinates for all cells
             for (int y = 0; y < dimension; y++) {
                 for (int x = 0; x < dimension; x++) {
                     cells[x][y].x++;
@@ -167,7 +170,7 @@ public class GameModel {
             // rotate
             rotationUpdate(rotationState);
         }
-        // Collision methods:
+        // Collision checking methods:
         boolean hasLeftCollision(Map gameMap) {          // check left side collision
             for (Cell cell : figureCells) {
                 int x = cell.x;
@@ -220,7 +223,7 @@ public class GameModel {
             return false;
         }
         boolean hasRotationCollision(Map gameMap) {                 // check rotation collision
-            // update rotation state
+            // update rotation
             rotationUpdate((rotationState + 1) % rotateStateNumber);
             // check collision
             for (Cell cell : figureCells) {
@@ -235,7 +238,7 @@ public class GameModel {
                     return true;
                 }
             }
-            // update rotation state back
+            // update rotation back
             rotationUpdate(rotationState);
 
             return false;
@@ -353,12 +356,12 @@ public class GameModel {
         assert fallingFigure == null;
         // choose figure type
         Random rand = new Random();
-        int type = rand.nextInt() % figureTypeCount;
+        int type = Math.abs(rand.nextInt()) % figureTypeCount;
         // choose colour
-        Colour colour = Colour.values()[(rand.nextInt() % figureColourCount) + 1];
+        Colour colour = Colour.values()[(Math.abs(rand.nextInt()) % (figureColourCount - 1)) + 1];
         Figure newFigure = new Figure(type, colour);
         // set cell coordinates:
-        int startX = rand.nextInt() % (gameMap.width - newFigure.dimension);
+        int startX = Math.abs(rand.nextInt()) % (gameMap.width - newFigure.dimension);
         int startY = 0;
 
         for (int y = 0; y < newFigure.dimension; y++) {
