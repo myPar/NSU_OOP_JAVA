@@ -448,7 +448,7 @@ public class GameModel implements GameController, GraphicContext {
         Random rand = new Random();
         int type = Math.abs(rand.nextInt()) % figureTypeCount;
         // choose colour
-        Colour colour = Colour.values()[(Math.abs(rand.nextInt()) % (figureColourCount - 1)) + 1];
+        Colour colour = Colour.values()[(Math.abs(rand.nextInt()) % (figureColourCount)) + 1];
         Figure newFigure = new Figure(type, colour);
         // set cell coordinates:
         int startX = Math.abs(rand.nextInt()) % (gameMap.width - newFigure.dimension);
