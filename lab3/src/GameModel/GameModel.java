@@ -1,15 +1,15 @@
 package GameModel;
 
 import java.io.InputStream;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
-public class GameModel {
+public class GameModel implements GameController, GraphicContext {
 // constants:
     private static final String figureConfigFileName = "figure_config_file";
     private static final int figureTypeCount = 7;
     private static final int figureColourCount = 4;
     private static final int pointsIncrement = 100;
+    private static final int maxRecordsCount = 5;
 // fields:
     // game map object
     private Map gameMap;
@@ -20,6 +20,17 @@ public class GameModel {
     // top figure cell Y-coordinate
     private int topMapY;
     private int totalPoints;
+    // record table
+    private static TreeSet<Integer> records;
+    // record table update flag
+    private static boolean recordUpdated;
+    // current game model state
+    private State currentState;
+// static block (recordQueue initializing)
+    static {
+        records = new TreeSet<>();
+        recordUpdated = false;
+    }
 // constructor
     public GameModel(int mapWidth, int mapHeight) {
         // create map
@@ -34,9 +45,12 @@ public class GameModel {
         topMapY = mapHeight;
         // no points yet
         totalPoints = 0;
+        // default state - Game is running
+        currentState = State.GAME_RUNNING;
     }
 // enums:
-    public enum Colour {WHITE, RED, GREEN, BLUE, YELLOW}
+    public enum Colour {WHITE, RED, GREEN, BLUE, YELLOW}    // enum of colours
+    public enum State {GAME_RUNNING, OPEN_RECORDS_PANEL, OPEN_ABOUT_PANEL}
 // static classes of Game Model: game Map, game cell, falling figure
     // Game map class
     private static class Map implements GraphicMap {
@@ -383,8 +397,9 @@ public class GameModel {
             }
         }
     }
-// methods which Controller called
+// GameController methods implementation (methods which Controller called):
     // rotate figure
+    @Override
     public void rotateFigure() {
         assert fallingFigure != null;
         // if no rotate collision - rotate
@@ -393,6 +408,7 @@ public class GameModel {
         }
     }
     // move figure right
+    @Override
     public void moveFigureRight() {
         assert fallingFigure != null;
         // if no right collision - move right
@@ -401,6 +417,7 @@ public class GameModel {
         }
     }
     // move figure left
+    @Override
     public void moveFigureLeft() {
         assert fallingFigure != null;
         // if no left collision - move left
@@ -408,6 +425,7 @@ public class GameModel {
             fallingFigure.moveLeft();
         }
     }
+    @Override
     // move figure down
     public boolean moveFigureDown() {
         assert fallingFigure != null;
@@ -421,8 +439,9 @@ public class GameModel {
             return false;
         }
     }
-    // spawn new Figure method
-    public void spawn() {
+    // spawn new Figure method (return 'true' if there was no collision and 'false' else)
+    @Override
+    public boolean spawn() {
         // spawn if figure has already fallen
         assert fallingFigure == null;
         // choose figure type
@@ -443,8 +462,21 @@ public class GameModel {
         }
         // update falling figure
         fallingFigure = newFigure;
+        // check collision
+        for (Cell cell: fallingFigure.figureCells) {
+            int x = cell.x;
+            int y = cell.y;
+
+            if (gameMap.map[x][y].hasFigure) {
+                // handled a collision - return false
+                return false;
+            }
+        }
+        // no collisions so can spawn new figure
+        return true;
     }
     // merge fell figure with game map
+    @Override
     public void mergeFigure() {
         assert  fallingFigure != null;
         int lowY = -1;
@@ -474,15 +506,69 @@ public class GameModel {
         fallingFigure = null;
         lineDestructor.checkLines(lowY, highY);
     }
-// methods which GUI calls:
+    // add total points to records
+    public static void addRecord(GameModel model) {
+        records.add(model.totalPoints);
+
+        // check if tree set is overhead
+        if (records.size() > maxRecordsCount) {
+            // remove smallest record
+            records.remove(records.last());
+        }
+        // set record update flag in 'true'
+        recordUpdated = true;
+    }
+    // set new game model state
+    @Override
+    public void setModelState(State newState) {
+        currentState = newState;
+    }
+    // get game state
+    @Override
+    public State getModelState() {
+        return currentState;
+    }
+// GraphicContext methods implementation (methods which GUI calls):
+    @Override
     public GraphicMap getGraphicMap() {
         assert gameMap != null;
 
         return gameMap;
     }
+    @Override
     public GraphicFigure getGraphicFigure() {
         assert fallingFigure != null;
 
         return fallingFigure;
+    }
+    @Override
+    public int[] getRecordData() {
+        int length = records.size();
+        int[] result = new int[length];
+
+        int idx = 0;
+        Iterator<Integer> iterator = records.iterator();
+
+        // copy tree set elements in sorted order
+        while(iterator.hasNext()) {
+            result[length - 1 - idx++] = iterator.next();
+        }
+        return result;
+    }
+    @Override
+    public State getGameState() {
+        return currentState;
+    }
+// get records count method
+    public static int getMaxRecordsCount() {
+        return maxRecordsCount;
+    }
+// get records updated flag method
+    public static boolean isRecordUpdated() {
+        return recordUpdated;
+    }
+//  reset record update method
+    public static void resetRecordUpdate() {
+        recordUpdated = false;
     }
 }

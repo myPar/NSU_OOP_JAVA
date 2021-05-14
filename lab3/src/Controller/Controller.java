@@ -3,6 +3,7 @@ package Controller;
 import GUI.ControllerMessage;
 import GUI.GUI;
 import GameModel.GameModel;
+import GameModel.GameController;
 
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -20,19 +21,45 @@ public class Controller {
         // queue is blocking (GUI thread adds messages, main game thread removes messages)
         messageQueue = new LinkedBlockingQueue<>(10);
     }
+    // main game launcher method
     public void runGame() throws InterruptedException {
-        GameModel model = new GameModel(10, 20);
+        // create GUI
+        GUI gameGUI = new GUI(this);
+
+        // main game loop
+        while(true) {
+            GameModel model = new GameModel(10, 20);
+            runNewGame(gameGUI, model);
+            GameModel.addRecord(model);
+        }
+    }
+    // run new game session method
+    private void runNewGame(GUI gameGUI, GameController model) throws InterruptedException {
         model.spawn();
 
-        GUI gameGUI = new GUI(this);
         long startTime = System.currentTimeMillis();
         long curTime;
 
         while (true) {
             // get new message
             ControllerMessage message = getMessage();
+            // if NEW_GAME message was handled - break
+            if (message != null && message.getMessage() == ControllerMessage.Message.NEW_GAME) {
+                break;
+            }
             // update model
             updateModel(message, model);
+
+            // while any not game panel is open handle messages
+            while(model.getModelState() != GameModel.State.GAME_RUNNING) {
+                gameGUI.viewGraphicModel((GameModel) model);
+                // reset record update
+                GameModel.resetRecordUpdate();
+                // get new message
+                message = getMessage();
+                // update model
+                updateModel(message, model);
+            }
             // get current time
             curTime = System.currentTimeMillis();
             // if current delta time > verticalMoveDeltaTime: update y coordinate of figure
@@ -45,19 +72,22 @@ public class Controller {
                     // merge figure
                     model.mergeFigure();
                     // spawn new figure
-                    model.spawn();
+                    if (!model.spawn()) {
+                        // figure can't spawn, so game ended
+                        break;
+                    }
                 }
                 // update start time
                 startTime = System.currentTimeMillis();
             }
             // view graphic model
-            gameGUI.viewGraphicModel(model.getGraphicMap(), model.getGraphicFigure());
+            gameGUI.viewGraphicModel((GameModel) model);
             // wait gameDeltaTime in game thread
             sleep(gameDeltaTime);
         }
     }
 // main update model method
-    private void updateModel(ControllerMessage message, GameModel model) {
+    private void updateModel(ControllerMessage message, GameController model) {
         assert model != null;
         // check empty message case
         if (message == null) {
@@ -77,12 +107,32 @@ public class Controller {
                     break;
                 case ESC:
                     System.exit(0);
+                case ABOUT:
+                    if (model.getModelState() == GameModel.State.OPEN_ABOUT_PANEL) {
+                        // exit from ABOUT panel
+                        model.setModelState(GameModel.State.GAME_RUNNING);
+                    }
+                    else {
+                        // open ABOUT panel
+                        model.setModelState(GameModel.State.OPEN_ABOUT_PANEL);
+                    }
+                    break;
+                case RECORDS:
+                    if (model.getModelState() == GameModel.State.OPEN_RECORDS_PANEL) {
+                        // exit from RECORDS panel
+                        model.setModelState(GameModel.State.GAME_RUNNING);
+                    }
+                    else {
+                        // open RECORDS panel
+                        model.setModelState(GameModel.State.OPEN_RECORDS_PANEL);
+                    }
                     break;
                 default:
                     assert false;
             }
         }
         else {
+            assert false;
             // TODO: write mouse events case
         }
     }
