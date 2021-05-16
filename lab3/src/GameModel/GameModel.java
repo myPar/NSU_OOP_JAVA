@@ -26,6 +26,9 @@ public class GameModel implements GameController, GraphicContext {
     private static boolean recordUpdated;
     // current game model state
     private State currentState;
+    // game map repaint flag
+    private boolean isNeedRepaintMap;
+    private boolean isNeedRepaintFigure;
 // static block (recordQueue initializing)
     static {
         records = new TreeSet<>();
@@ -47,6 +50,9 @@ public class GameModel implements GameController, GraphicContext {
         totalPoints = 0;
         // default state - Game is running
         currentState = State.GAME_RUNNING;
+        // set repaint flags in true:
+        isNeedRepaintFigure = true;
+        isNeedRepaintMap = true;
     }
 // enums:
     public enum Colour {WHITE, RED, GREEN, BLUE, YELLOW}    // enum of colours
@@ -528,7 +534,16 @@ public class GameModel implements GameController, GraphicContext {
     public State getModelState() {
         return currentState;
     }
-// GraphicContext methods implementation (methods which GUI calls):
+    // set repaint flags methods:
+    @Override
+    public void setMapRepaintFlag(boolean mapRepaintFlag) {
+        isNeedRepaintMap = mapRepaintFlag;
+    }
+    @Override
+    public void setFigureRepaintFlag(boolean figureRepaintFlag) {
+        isNeedRepaintFigure = figureRepaintFlag;
+    }
+    // GraphicContext methods implementation (methods which GUI calls):
     @Override
     public GraphicMap getGraphicMap() {
         assert gameMap != null;
@@ -559,6 +574,10 @@ public class GameModel implements GameController, GraphicContext {
     public State getGameState() {
         return currentState;
     }
+    @Override
+    public boolean getMapRepaintFlag() {return isNeedRepaintMap;}
+    @Override
+    public boolean getFigureRepaintFlag() {return isNeedRepaintFigure;}
 // get records count method
     public static int getMaxRecordsCount() {
         return maxRecordsCount;

@@ -13,4 +13,7 @@ public interface GameController {
     void setModelState(GameModel.State newState);
 // get model state value method
     GameModel.State getModelState();
+// set repaint flags method
+    void setMapRepaintFlag(boolean mapRepaintFlag);
+    void setFigureRepaintFlag(boolean figureRepaintFlag);
 }

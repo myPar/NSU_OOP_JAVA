@@ -9,4 +9,7 @@ public interface GraphicContext {
     GameModel.State getGameState();
 // get records data
     int[] getRecordData();
+// repaint flags getters
+    boolean getMapRepaintFlag();
+    boolean getFigureRepaintFlag();
 }

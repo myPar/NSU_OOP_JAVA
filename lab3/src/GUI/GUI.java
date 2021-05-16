@@ -12,6 +12,8 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class GUI {
+// current graphic context field:
+private GraphicContext context;
 // game Frame fields:
     private JFrame gameFrame;
     private JPanel gamePanel;
@@ -114,6 +116,7 @@ public class GUI {
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);
             this.setBackground(Color.GRAY);
+
             paintMap(g);
             paintFigure(g);
         }
@@ -267,12 +270,16 @@ public class GUI {
     }
 // view GUI method
     public void viewGraphicModel(GraphicContext context) {
+        this.context = context;
+
         switch(context.getGameState()) {
             case GAME_RUNNING:
                 this.map = context.getGraphicMap();
                 this.figure = context.getGraphicFigure();
                 // repaint game panel
-                gamePanel.repaint();
+                if (context.getMapRepaintFlag() || context.getFigureRepaintFlag()) {
+                    gamePanel.repaint();
+                }
                 // view
                 gameFrame.setVisible(true);
                 recordFrame.setVisible(false);

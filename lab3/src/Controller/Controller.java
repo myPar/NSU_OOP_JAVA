@@ -66,11 +66,16 @@ public class Controller {
             if (curTime - startTime >= verticalMoveDeltaTime) {
                 // move figure down
                 boolean hasMoved = model.moveFigureDown();
+                // need to repaint figure
+                model.setFigureRepaintFlag(true);
 
                 // check did figure moved down
                 if (!hasMoved) {
                     // merge figure
                     model.mergeFigure();
+                    // need to repaint map
+                    model.setMapRepaintFlag(true);
+
                     // spawn new figure
                     if (!model.spawn()) {
                         // figure can't spawn, so game ended
@@ -82,6 +87,10 @@ public class Controller {
             }
             // view graphic model
             gameGUI.viewGraphicModel((GameModel) model);
+            // reset repaint flags:
+            model.setFigureRepaintFlag(false);
+            model.setMapRepaintFlag(false);
+
             // wait gameDeltaTime in game thread
             sleep(gameDeltaTime);
         }
@@ -98,12 +107,15 @@ public class Controller {
             switch (message.getMessage()) {
                 case MOVE_LEFT:
                     model.moveFigureLeft();
+                    model.setFigureRepaintFlag(true);
                     break;
                 case MOVE_RIGHT:
                     model.moveFigureRight();
+                    model.setFigureRepaintFlag(true);
                     break;
                 case ROTATE:
                     model.rotateFigure();
+                    model.setFigureRepaintFlag(true);
                     break;
                 case ESC:
                     System.exit(0);

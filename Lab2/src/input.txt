@@ -1,0 +1,16 @@
+# this is the comment
+Push f
+Push 25
+Push 33
+Define a 10
+Define b 30
+Push a
+#this is the comment
+Push b
+Add
+Add
+Div
+Print
+Push 3
+Mul
+Print
