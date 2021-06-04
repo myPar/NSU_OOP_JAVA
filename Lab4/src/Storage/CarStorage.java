@@ -1,6 +1,7 @@
 package Storage;
 
 import FactoryObjects.Car;
+import Log.StorageLogger;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -37,9 +38,12 @@ public class CarStorage {
     // current storage capacity
     private int capacity;
     // car queue
-    Queue<Car> storage;
+    private Queue<Car> storage;
     // count of cars got from storage buy dealers
-    int carGotCount;
+    private int carGotCount;
+    // CarStorage logger
+    private StorageLogger logger;
+    private final String logFileName = "./src/Log/logfiles/CarStorageLog.txt";
 // config method
     public static void config(int capacity) {
         assert !isConfigured;
@@ -53,6 +57,8 @@ public class CarStorage {
         storage = new LinkedList<>();
         // copy static field value to class instance field
         capacity = carStorageCapacity;
+        // init logger
+        logger = new StorageLogger("CarStorageLogger", logFileName);
         carGotCount = 0;
     }
 // public methods:
@@ -87,6 +93,7 @@ public class CarStorage {
                 break;
             }
         }
+        logger.log(StorageLogger.LogMessageType.PUT, car);
         // queue is not empty so car can be taken and controller can check storage state
         notifyAll();
     }
@@ -110,6 +117,7 @@ public class CarStorage {
             }
         }
         carGotCount++;
+        logger.log(StorageLogger.LogMessageType.GET, result);
         // queue is not full so car can be added and controller can check storage state
         notifyAll();
 

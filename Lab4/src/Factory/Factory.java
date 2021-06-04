@@ -1,12 +1,15 @@
 package Factory;
 
 import FactoryObjects.FactoryObject;
+import Log.FactoryLogger;
 import Storage.Storage;
 
 public class Factory {
 // static fields:
     // count of suppliers for each Factory type
     private static int[] suppliersCounts = {0, 0, 0};
+    // log files names array
+    private static final String[] logFilesNames = {"./src/Log/logfiles/MotorFactoryLog.txt", "./src/Log/logfiles/BodyFactoryLog.txt", "./src/Log/logfiles/AccessoryFactoryLog.txt"};
     // factory configuration flag
     private static boolean isConfigured = false;
 // fields:
@@ -18,6 +21,8 @@ public class Factory {
     private FactoryObject.Type type;
     // reference to storage
     private Storage storageReference;
+    // Factory logger
+    private FactoryLogger logger;
 // constructor
     public Factory(FactoryObject.Type type, Storage ref) {
         // factory should be configured
@@ -33,9 +38,11 @@ public class Factory {
         suppliersCount = suppliersCounts[type.getValue()];
         suppliers = new Supplier[suppliersCount];
         storageReference = ref;
+        // init logger
+        logger = new FactoryLogger(type.toString() + "FactoryLogger", logFilesNames[type.getValue()]);
         // create suppliers
         for (int i = 0; i < suppliersCount; i++) {
-            suppliers[i] = new Supplier(type, storageReference);
+            suppliers[i] = new Supplier(type, storageReference, logger);
         }
     }
 // Factory config method

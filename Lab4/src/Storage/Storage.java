@@ -1,15 +1,19 @@
 package Storage;
 
 import FactoryObjects.FactoryObject;
+import Log.StorageLogger;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class Storage {
-// static fields
+// static fields:
     // storage config flag
     private static boolean isConfigured = false;
     // capacities for all storage types (Motor, Body, Accessory)
     private static int[] capacities = {0, 0, 0};
+    // log files names array
+    private static final String[] logFilesNames = {"./src/Log/logfiles/MotorStorageLog.txt", "./src/Log/logfiles/BodyStorageLog.txt", "./src/Log/logfiles/AccessoryStorageLog.txt"};
 // fields:
     // max obj count in storage
     private int capacity;
@@ -17,6 +21,8 @@ public class Storage {
     private FactoryObject.Type type;
     // queue of details objects
     Queue<FactoryObject> storage;
+    // Storage logger
+    StorageLogger logger;
 // config method
     public static void config(int cap1, int cap2, int cap3) {
         assert !isConfigured;
@@ -33,13 +39,15 @@ public class Storage {
     public Storage(FactoryObject.Type type) {
         // storage class should be configured
         assert isConfigured;
-        // Detil storage can't contain cars
+        // Detail storage can't contain cars
         assert type != FactoryObject.Type.CAR;
 
         storage = new LinkedList<>();
         // init capacity for storage of such type
         capacity = capacities[type.getValue()];
         this.type = type;
+        // init logger
+        logger = new StorageLogger(type.toString() + "StorageLogger", logFilesNames[type.getValue()]);
     }
 // put detail in the storage method
     public synchronized void put(FactoryObject obj) {
@@ -64,6 +72,7 @@ public class Storage {
                 break;
             }
         }
+        logger.log(StorageLogger.LogMessageType.PUT, obj);
         // queue is not empty so detail can be taken
         notify();
     }
@@ -86,6 +95,7 @@ public class Storage {
                 break;
             }
         }
+        logger.log(StorageLogger.LogMessageType.GET, result);
         // queue is not full so detail can be added
         notifyAll();
 

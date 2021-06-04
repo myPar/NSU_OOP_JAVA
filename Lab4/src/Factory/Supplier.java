@@ -2,6 +2,7 @@ package Factory;
 
 import FactoryObjects.FactoryObject;
 import FactoryObjects.ObjectsFactory;
+import Log.FactoryLogger;
 import Storage.Storage;
 
 public class Supplier extends Thread {
@@ -12,8 +13,10 @@ public class Supplier extends Thread {
     private Storage storageReference;
     // delta time of supplying
     private int deltaTime;
+    // Factory logger
+    FactoryLogger logger;
 // constructor:
-    public Supplier(FactoryObject.Type type, Storage ref) {
+    public Supplier(FactoryObject.Type type, Storage ref, FactoryLogger logger) {
         // storage type and supplier type should be equal
         assert ref.getType() == type;
         // supplier can only put Details not cars
@@ -21,20 +24,27 @@ public class Supplier extends Thread {
         // init fields:
         this.type = type;
         this.storageReference = ref;
-        deltaTime = 10;
+        this.logger = logger;
+        deltaTime = 4000;
     }
 // put methods:
     // put detail to storage method
     private void putDetail() {
         switch (type) {
             case BODY:
-                storageReference.put(ObjectsFactory.makeDetail(FactoryObject.Type.BODY));
+                FactoryObject body = ObjectsFactory.makeDetail(FactoryObject.Type.BODY);
+                storageReference.put(body);
+                logger.log(body);
                 break;
             case MOTOR:
-                storageReference.put(ObjectsFactory.makeDetail(FactoryObject.Type.MOTOR));
+                FactoryObject motor = ObjectsFactory.makeDetail(FactoryObject.Type.MOTOR);
+                storageReference.put(motor);
+                logger.log(motor);
                 break;
             case ACCESSORY:
-                storageReference.put(ObjectsFactory.makeDetail(FactoryObject.Type.ACCESSORY));
+                FactoryObject accessory = ObjectsFactory.makeDetail(FactoryObject.Type.ACCESSORY);
+                storageReference.put(accessory);
+                logger.log(accessory);
                 break;
             default:
                 assert false;

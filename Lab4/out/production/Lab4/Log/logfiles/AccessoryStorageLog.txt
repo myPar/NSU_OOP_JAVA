@@ -1,0 +1,66 @@
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-2> was put to storage by Thread 36
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-17> was put to storage by Thread 39
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-11> was put to storage by Thread 37
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-23> was put to storage by Thread 40
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-9> was put to storage by Thread 34
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-5> was put to storage by Thread 43
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-3> was put to storage by Thread 38
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-24> was put to storage by Thread 42
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-21> was put to storage by Thread 41
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-29> was put to storage by Thread 35
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-2> was got from storage by Thread 44
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-17> was got from storage by Thread 44
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-11> was got from storage by Thread 57
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-23> was got from storage by Thread 59
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-9> was got from storage by Thread 58
+
+Jun 05, 2021 1:48:34 AM Log.StorageLogger log
+INFO: ACCESSORY<id-5> was got from storage by Thread 56
+
+Jun 05, 2021 1:48:38 AM Log.StorageLogger log
+INFO: ACCESSORY<id-37> was put to storage by Thread 38
+
+Jun 05, 2021 1:48:38 AM Log.StorageLogger log
+INFO: ACCESSORY<id-38> was put to storage by Thread 39
+
+Jun 05, 2021 1:48:38 AM Log.StorageLogger log
+INFO: ACCESSORY<id-39> was put to storage by Thread 37
+
+Jun 05, 2021 1:48:38 AM Log.StorageLogger log
+INFO: ACCESSORY<id-41> was put to storage by Thread 40
+
+Jun 05, 2021 1:48:38 AM Log.StorageLogger log
+INFO: ACCESSORY<id-43> was put to storage by Thread 34
+
+Jun 05, 2021 1:48:38 AM Log.StorageLogger log
+INFO: ACCESSORY<id-44> was put to storage by Thread 43
+

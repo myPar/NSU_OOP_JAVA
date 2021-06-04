@@ -1,0 +1,90 @@
+Jun 05, 2021 2:02:34 AM Log.FactoryLogger log
+INFO: MOTOR<id-0> was put to storage by Thread 14
+
+Jun 05, 2021 2:02:34 AM Log.FactoryLogger log
+INFO: MOTOR<id-14> was put to storage by Thread 18
+
+Jun 05, 2021 2:02:34 AM Log.FactoryLogger log
+INFO: MOTOR<id-16> was put to storage by Thread 17
+
+Jun 05, 2021 2:02:34 AM Log.FactoryLogger log
+INFO: MOTOR<id-18> was put to storage by Thread 16
+
+Jun 05, 2021 2:02:34 AM Log.FactoryLogger log
+INFO: MOTOR<id-21> was put to storage by Thread 15
+
+Jun 05, 2021 2:02:34 AM Log.FactoryLogger log
+INFO: MOTOR<id-24> was put to storage by Thread 20
+
+Jun 05, 2021 2:02:34 AM Log.FactoryLogger log
+INFO: MOTOR<id-26> was put to storage by Thread 19
+
+Jun 05, 2021 2:02:34 AM Log.FactoryLogger log
+INFO: MOTOR<id-27> was put to storage by Thread 21
+
+Jun 05, 2021 2:02:34 AM Log.FactoryLogger log
+INFO: MOTOR<id-29> was put to storage by Thread 22
+
+Jun 05, 2021 2:02:34 AM Log.FactoryLogger log
+INFO: MOTOR<id-30> was put to storage by Thread 23
+
+Jun 05, 2021 2:02:38 AM Log.FactoryLogger log
+INFO: MOTOR<id-40> was put to storage by Thread 14
+
+Jun 05, 2021 2:02:38 AM Log.FactoryLogger log
+INFO: MOTOR<id-52> was put to storage by Thread 18
+
+Jun 05, 2021 2:02:38 AM Log.FactoryLogger log
+INFO: MOTOR<id-54> was put to storage by Thread 17
+
+Jun 05, 2021 2:02:38 AM Log.FactoryLogger log
+INFO: MOTOR<id-59> was put to storage by Thread 16
+
+Jun 05, 2021 2:02:38 AM Log.FactoryLogger log
+INFO: MOTOR<id-66> was put to storage by Thread 15
+
+Jun 05, 2021 2:02:38 AM Log.FactoryLogger log
+INFO: MOTOR<id-69> was put to storage by Thread 20
+
+Jun 05, 2021 2:02:38 AM Log.FactoryLogger log
+INFO: MOTOR<id-70> was put to storage by Thread 19
+
+Jun 05, 2021 2:02:38 AM Log.FactoryLogger log
+INFO: MOTOR<id-71> was put to storage by Thread 21
+
+Jun 05, 2021 2:02:38 AM Log.FactoryLogger log
+INFO: MOTOR<id-76> was put to storage by Thread 22
+
+Jun 05, 2021 2:02:38 AM Log.FactoryLogger log
+INFO: MOTOR<id-77> was put to storage by Thread 23
+
+Jun 05, 2021 2:02:42 AM Log.FactoryLogger log
+INFO: MOTOR<id-81> was put to storage by Thread 14
+
+Jun 05, 2021 2:02:42 AM Log.FactoryLogger log
+INFO: MOTOR<id-84> was put to storage by Thread 17
+
+Jun 05, 2021 2:02:42 AM Log.FactoryLogger log
+INFO: MOTOR<id-85> was put to storage by Thread 18
+
+Jun 05, 2021 2:02:42 AM Log.FactoryLogger log
+INFO: MOTOR<id-86> was put to storage by Thread 16
+
+Jun 05, 2021 2:02:42 AM Log.FactoryLogger log
+INFO: MOTOR<id-104> was put to storage by Thread 15
+
+Jun 05, 2021 2:02:42 AM Log.FactoryLogger log
+INFO: MOTOR<id-108> was put to storage by Thread 19
+
+Jun 05, 2021 2:02:42 AM Log.FactoryLogger log
+INFO: MOTOR<id-109> was put to storage by Thread 20
+
+Jun 05, 2021 2:02:42 AM Log.FactoryLogger log
+INFO: MOTOR<id-110> was put to storage by Thread 21
+
+Jun 05, 2021 2:02:42 AM Log.FactoryLogger log
+INFO: MOTOR<id-116> was put to storage by Thread 22
+
+Jun 05, 2021 2:02:42 AM Log.FactoryLogger log
+INFO: MOTOR<id-117> was put to storage by Thread 23
+

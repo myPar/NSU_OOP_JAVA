@@ -7,7 +7,7 @@ import Storage.CarStorage;
 public class Dealer extends Thread {
 // fields:
     private CarStorage storage;
-    private static int deltaTime = 10;
+    private static int deltaTime = 1000;
 // constructor
     public Dealer(CarStorage storage) {
         this.storage = storage;

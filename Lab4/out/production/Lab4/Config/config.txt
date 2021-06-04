@@ -1,4 +1,4 @@
-MotorStorageSize = 10
+MotorStorageSize = 20
 BodyStorageSize = 10
 AccessoryStorageSize = 10
 CarStorageSize = 5

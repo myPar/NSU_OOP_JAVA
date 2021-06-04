@@ -1,6 +1,7 @@
 package ThreadPool;
 
 import FactoryObjects.FactoryObject;
+import Log.CarFactoryLogger;
 import Storage.Storage;
 import Storage.CarStorage;
 
@@ -22,6 +23,9 @@ public class CarFactory {
     private Storage bodyStorage;
     private Storage accessoryStorage;
     private CarStorage carStorage;
+    // CarFactory logger
+    private CarFactoryLogger logger;
+    private final String logFileName = "./src/Log/logfiles/CarFactoryLog.txt";
 // config method
     public static void config(int wCount, int maxSize) {
         assert !isConfigured;
@@ -53,9 +57,13 @@ public class CarFactory {
         bodyStorage = bStorage;
         accessoryStorage = aStorage;
         carStorage = cStorage;
+        // init logger
+        logger = new CarFactoryLogger("CarFactoryLogger", logFileName);
+        // put initial task in thread pool, because Controller is notified only when car put/get to/from storage
+        addTask();
     }
 // put new task in pool method
     public void addTask() {
-        threadPool.execute(new Task(motorStorage, bodyStorage, accessoryStorage, carStorage));
+        threadPool.execute(new Task(motorStorage, bodyStorage, accessoryStorage, carStorage, logger));
     }
 }

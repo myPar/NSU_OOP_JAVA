@@ -1,0 +1,390 @@
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-0> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-1> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-2> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-3> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-4> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-5> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-6> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-7> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-8> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-9> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-10> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-11> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-12> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-13> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-14> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-15> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-16> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-17> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-18> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-19>(MOTOR<id-0>, BODY<id-1>, ACCESSORY<id-2>)
+ was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-20> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-21> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-22> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-23> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-24> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-25> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-26> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-27> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-28> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-29> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-30> was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-31>(MOTOR<id-14>, BODY<id-8>, ACCESSORY<id-9>)
+ was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-32>(MOTOR<id-16>, BODY<id-7>, ACCESSORY<id-11>)
+ was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-33>(MOTOR<id-18>, BODY<id-6>, ACCESSORY<id-13>)
+ was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-34>(MOTOR<id-21>, BODY<id-5>, ACCESSORY<id-15>)
+ was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-35>(MOTOR<id-24>, BODY<id-4>, ACCESSORY<id-17>)
+ was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-36>(MOTOR<id-26>, BODY<id-3>, ACCESSORY<id-20>)
+ was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-37>(MOTOR<id-27>, BODY<id-12>, ACCESSORY<id-22>)
+ was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-38>(MOTOR<id-29>, BODY<id-10>, ACCESSORY<id-23>)
+ was created
+
+Jun 05, 2021 2:02:34 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-39>(MOTOR<id-30>, BODY<id-28>, ACCESSORY<id-25>)
+ was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-40> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-41> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-42> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-43>(MOTOR<id-40>, BODY<id-42>, ACCESSORY<id-41>)
+ was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-44> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-45> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-46> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-47> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-48> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-49> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-50> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-51> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-52> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-53> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-54> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-55> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-56> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-57>(MOTOR<id-52>, BODY<id-44>, ACCESSORY<id-45>)
+ was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-58> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-59> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-60>(MOTOR<id-54>, BODY<id-46>, ACCESSORY<id-47>)
+ was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-61>(MOTOR<id-59>, BODY<id-48>, ACCESSORY<id-49>)
+ was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-62> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-63> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-64> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-65> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-66> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-67>(MOTOR<id-66>, BODY<id-50>, ACCESSORY<id-55>)
+ was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-68> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-69> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-70> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-71> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-72>(MOTOR<id-69>, BODY<id-51>, ACCESSORY<id-62>)
+ was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-73>(MOTOR<id-70>, BODY<id-53>, ACCESSORY<id-63>)
+ was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-74>(MOTOR<id-71>, BODY<id-56>, ACCESSORY<id-64>)
+ was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-75> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-76> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-77> was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-78>(MOTOR<id-76>, BODY<id-58>, ACCESSORY<id-65>)
+ was created
+
+Jun 05, 2021 2:02:38 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-79>(MOTOR<id-77>, BODY<id-75>, ACCESSORY<id-68>)
+ was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-80> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-81> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-82> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-83>(MOTOR<id-81>, BODY<id-82>, ACCESSORY<id-80>)
+ was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-84> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-85> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-86> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-87> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-88> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-89> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-90> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-91> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-92> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-93> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-94> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-95>(MOTOR<id-86>, BODY<id-92>, ACCESSORY<id-90>)
+ was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-96>(MOTOR<id-85>, BODY<id-94>, ACCESSORY<id-91>)
+ was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-97> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-98> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-99> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-100> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-101> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-102>(MOTOR<id-84>, BODY<id-88>, ACCESSORY<id-87>)
+ was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-103> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-104> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-105> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-106> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-107>(MOTOR<id-104>, BODY<id-93>, ACCESSORY<id-98>)
+ was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-108> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-109> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-110> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: ACCESSORY<id-111> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-112>(MOTOR<id-108>, BODY<id-97>, ACCESSORY<id-89>)
+ was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-113>(MOTOR<id-109>, BODY<id-99>, ACCESSORY<id-103>)
+ was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-114>(MOTOR<id-110>, BODY<id-100>, ACCESSORY<id-105>)
+ was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: BODY<id-115> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-116> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: MOTOR<id-117> was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-118>(MOTOR<id-116>, BODY<id-101>, ACCESSORY<id-106>)
+ was created
+
+Jun 05, 2021 2:02:42 AM Log.ObjectsFactoryLogger log
+INFO: CAR<id-119>(MOTOR<id-117>, BODY<id-115>, ACCESSORY<id-111>)
+ was created
+
