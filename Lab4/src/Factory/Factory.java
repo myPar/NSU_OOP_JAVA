@@ -1,6 +1,7 @@
 package Factory;
 
-import Detail.Detail;
+import FactoryObjects.FactoryObject;
+import Storage.Storage;
 
 public class Factory {
 // static fields:
@@ -14,17 +15,27 @@ public class Factory {
     // suppliers count
     private int suppliersCount;
     // supplying detail type
-    private Detail.Type type;
+    private FactoryObject.Type type;
+    // reference to storage
+    private Storage storageReference;
 // constructor
-    public Factory(Detail.Type type) {
+    public Factory(FactoryObject.Type type, Storage ref) {
+        // factory should be configured
         assert isConfigured;
+        assert ref != null;
+        // storage type should be equal to factory type
+        assert ref.getType() == type;
+        // obj should be a detail, not a car
+        assert type.getValue() > 3;
+
         // init fields:
         this.type = type;
         suppliersCount = suppliersCounts[type.getValue()];
         suppliers = new Supplier[suppliersCount];
+        storageReference = ref;
         // create suppliers
         for (int i = 0; i < suppliersCount; i++) {
-            suppliers[i] = new Supplier();
+            suppliers[i] = new Supplier(type, storageReference);
         }
     }
 // Factory config method

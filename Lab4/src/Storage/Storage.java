@@ -1,7 +1,6 @@
 package Storage;
 
-import Detail.Detail;
-
+import FactoryObjects.FactoryObject;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -9,37 +8,50 @@ public class Storage {
 // static fields
     // storage config flag
     private static boolean isConfigured = false;
-    // capacities for all storage types
+    // capacities for all storage types (Motor, Body, Accessory)
     private static int[] capacities = {0, 0, 0};
 // fields:
-    // max details count in storage
+    // max obj count in storage
     private int capacity;
-    // type of details in the storage
-    private Detail.Type type;
+    // type of Factory objects in the storage
+    private FactoryObject.Type type;
     // queue of details objects
-    Queue<Detail> details;
-
+    Queue<FactoryObject> storage;
 // config method
-    public static void config() {
+    public static void config(int cap1, int cap2, int cap3) {
         assert !isConfigured;
+        assert  cap1 > 0;
+        assert  cap2 > 0;
+        assert  cap3 > 0;
 
+        isConfigured = true;
+        capacities[0] = cap1;
+        capacities[1] = cap2;
+        capacities[2] = cap3;
     }
 // constructor
-    public Storage() {
+    public Storage(FactoryObject.Type type) {
+        // storage class should be configured
         assert isConfigured;
+        // Detil storage can't contain cars
+        assert type != FactoryObject.Type.CAR;
 
-        details = new LinkedList<Detail>();
+        storage = new LinkedList<>();
+        // init capacity for storage of such type
+        capacity = capacities[type.getValue()];
+        this.type = type;
     }
-
 // put detail in the storage method
-    synchronized void put(Detail detail) {
-        assert detail != null;
-        assert detail.getType() == type;
-        assert details.size() <= capacity;
+    public synchronized void put(FactoryObject obj) {
+        assert obj != null;
+        // obj type should be equal to storage type
+        assert obj.getType() == type;
+        // storage size should be less or equal to capacity
+        assert storage.size() <= capacity;
 
         while (true) {
             // if queue is full wait
-            if (details.size() >= capacity) {
+            if (storage.size() >= capacity) {
                 try {
                     wait();
                 } catch (InterruptedException e) {
@@ -48,7 +60,7 @@ public class Storage {
             }
             else {
                 // add new detail to queue is queue is not full
-                details.add(detail);
+                storage.add(obj);
                 break;
             }
         }
@@ -56,13 +68,13 @@ public class Storage {
         notify();
     }
 // get detail from storage method
-    synchronized Detail get() {
-        assert details.size() <= capacity;
-        Detail result;
+    public synchronized FactoryObject get() {
+        assert storage.size() <= capacity;
+        FactoryObject result;
 
         while (true) {
             // if queue is empty - wait
-            if (details.size() <= 0) {
+            if (storage.size() <= 0) {
                 try {
                     wait();
                 } catch (InterruptedException e) {
@@ -70,12 +82,17 @@ public class Storage {
                 }
             }
             else {
-                result = details.remove();
+                result = storage.remove();
                 break;
             }
         }
         // queue is not full so detail can be added
-        notify();
+        notifyAll();
+
         return result;
+    }
+// getters:
+    public FactoryObject.Type getType() {
+        return type;
     }
 }
