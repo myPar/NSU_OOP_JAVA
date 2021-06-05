@@ -194,27 +194,73 @@ public class GUI extends Thread {
     }
 
     private void viewGUI() {
+        int[] prevCreatedCount = {0, 0, 0, 0};
+        int[] prevStorageCount = {0, 0, 0, 0};
+        int prevCarSoldCount = 0;
+
         while(true) {
             try {
                 // update object factory panel
                 int[] counts = ObjectsFactory.getCounts();
-                motorCreatedLabel.setText("Motors Created: " + counts[0]);
-                bodyCreatedLabel.setText("Body Created: " + counts[1]);
-                accessoryCreatedLabel.setText("Accessory Created: " + counts[2]);
-                carCreatedLabel.setText("Car Created: " + counts[3]);
-                objectFactoryPanel.repaint();
+                if (counts[0] != prevCreatedCount[0]) {
+                    motorCreatedLabel.setText("Motors Created: " + counts[0]);
+                    motorCreatedLabel.repaint();
+                    prevCreatedCount[0] = counts[0];
+                }
+                if (counts[1] != prevCreatedCount[1]) {
+                    bodyCreatedLabel.setText("Body Created: " + counts[1]);
+                    bodyCreatedLabel.repaint();
+                    prevCreatedCount[1] = counts[1];
+                }
+                if (counts[2] != prevCreatedCount[2]) {
+                    accessoryCreatedLabel.setText("Accessory Created: " + counts[2]);
+                    accessoryCreatedLabel.repaint();
+                    prevCreatedCount[2] = counts[2];
+                }
+                if (counts[3] != prevCreatedCount[3]) {
+                    carCreatedLabel.setText("Car Created: " + counts[3]);
+                    carCreatedLabel.repaint();
+                    prevCreatedCount[3] = counts[3];
+                }
+                //objectFactoryPanel.repaint();
 
                 // update storage panel
-                motorStorageLabel.setText("Motors in storage: " + motorStorage.getCount());
-                bodyStorageLabel.setText("Body in storage: " + bodyStorage.getCount());
-                accessoryStorageLabel.setText("Accessory in storage: " + accessoryStorage.getCount());
-                carStorageLabel.setText("Cars in storage: " + carStorage.getCount());
-                storagePanel.repaint();
+                int motorCount = motorStorage.getCount();
+                int bodyCount = bodyStorage.getCount();
+                int accessoryCount = accessoryStorage.getCount();
+                int carCount = carStorage.getCount();
+
+                if (prevStorageCount[0] != motorCount) {
+                    motorStorageLabel.setText("Motors in storage: " + motorCount);
+                    motorStorageLabel.repaint();
+                    prevStorageCount[0] = motorCount;
+                }
+                if (prevStorageCount[1] != bodyCount) {
+                    bodyStorageLabel.setText("Body in storage: " + bodyCount);
+                    bodyStorageLabel.repaint();
+                    prevStorageCount[1] = bodyCount;
+                }
+                if (prevStorageCount[2] != accessoryCount) {
+                    accessoryStorageLabel.setText("Accessory in storage: " + accessoryCount);
+                    accessoryStorageLabel.repaint();
+                    prevStorageCount[2] = accessoryCount;
+                }
+                if (prevStorageCount[3] != carCount) {
+                    carStorageLabel.setText("Cars in storage: " + carCount);
+                    carStorageLabel.repaint();
+                    prevStorageCount[3] = carCount;
+                }
+                //storagePanel.repaint();
 
                 // update car sanded panel
-                carSoldLabel.setText("Cars sold: " + carStorage.getSandedCount());
-                carSoldPanel.repaint();
-                frame.repaint();
+                int carSoldCount = carStorage.getSandedCount();
+                if (prevCarSoldCount != carSoldCount) {
+                    carSoldLabel.setText("Cars sold: " + carSoldCount);
+                    carSoldLabel.repaint();
+                    prevCarSoldCount = carSoldCount;
+                }
+                //carSoldPanel.repaint();
+//                frame.repaint();
 
                 Thread.sleep(deltaTime);
             } catch (InterruptedException e) {

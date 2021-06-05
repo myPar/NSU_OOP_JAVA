@@ -1,33 +1,60 @@
-Jun 05, 2021 10:19:15 AM Log.FactoryLogger log
-INFO: ACCESSORY<id-10> was put to storage by Thread 35
+Jun 05, 2021 11:34:42 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-0> was put to storage by Thread 35
 
-Jun 05, 2021 10:19:15 AM Log.FactoryLogger log
-INFO: ACCESSORY<id-24> was put to storage by Thread 36
+Jun 05, 2021 11:34:42 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-14> was put to storage by Thread 40
 
-Jun 05, 2021 10:19:15 AM Log.FactoryLogger log
-INFO: ACCESSORY<id-25> was put to storage by Thread 42
+Jun 05, 2021 11:34:42 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-12> was put to storage by Thread 37
 
-Jun 05, 2021 10:19:15 AM Log.FactoryLogger log
-INFO: ACCESSORY<id-29> was put to storage by Thread 40
+Jun 05, 2021 11:34:42 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-2> was put to storage by Thread 38
 
-Jun 05, 2021 10:19:15 AM Log.FactoryLogger log
-INFO: ACCESSORY<id-27> was put to storage by Thread 43
+Jun 05, 2021 11:34:42 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-1> was put to storage by Thread 43
 
-Jun 05, 2021 10:19:15 AM Log.FactoryLogger log
-INFO: ACCESSORY<id-22> was put to storage by Thread 38
+Jun 05, 2021 11:34:42 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-24> was put to storage by Thread 41
 
-Jun 05, 2021 10:19:15 AM Log.FactoryLogger log
-INFO: ACCESSORY<id-21> was put to storage by Thread 37
+Jun 05, 2021 11:34:42 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-15> was put to storage by Thread 39
 
-Jun 05, 2021 10:19:15 AM Log.FactoryLogger log
-INFO: ACCESSORY<id-23> was put to storage by Thread 34
+Jun 05, 2021 11:34:43 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-26> was put to storage by Thread 36
 
-Jun 05, 2021 10:19:15 AM Log.FactoryLogger log
-INFO: ACCESSORY<id-26> was put to storage by Thread 41
+Jun 05, 2021 11:34:43 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-29> was put to storage by Thread 42
 
-Jun 05, 2021 10:19:15 AM Log.FactoryLogger log
-INFO: ACCESSORY<id-28> was put to storage by Thread 39
+Jun 05, 2021 11:34:43 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-30> was put to storage by Thread 34
 
-Jun 05, 2021 10:19:16 AM Log.FactoryLogger log
-INFO: ACCESSORY<id-41> was put to storage by Thread 35
+Jun 05, 2021 11:34:43 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-40> was put to storage by Thread 35
+
+Jun 05, 2021 11:34:44 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-42> was put to storage by Thread 38
+
+Jun 05, 2021 11:34:44 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-50> was put to storage by Thread 41
+
+Jun 05, 2021 11:34:44 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-52> was put to storage by Thread 40
+
+Jun 05, 2021 11:34:44 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-53> was put to storage by Thread 37
+
+Jun 05, 2021 11:34:44 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-56> was put to storage by Thread 43
+
+Jun 05, 2021 11:34:44 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-60> was put to storage by Thread 39
+
+Jun 05, 2021 11:34:44 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-63> was put to storage by Thread 36
+
+Jun 05, 2021 11:34:44 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-75> was put to storage by Thread 34
+
+Jun 05, 2021 11:34:44 AM Log.FactoryLogger log
+INFO: ACCESSORY<id-76> was put to storage by Thread 42
 
