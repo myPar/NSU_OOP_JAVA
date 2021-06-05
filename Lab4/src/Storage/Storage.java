@@ -105,4 +105,9 @@ public class Storage {
     public FactoryObject.Type getType() {
         return type;
     }
+// GUI methods:
+    // synchronized getting detail count method
+    public synchronized int getCount() {
+        return storage.size();
+    }
 }

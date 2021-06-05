@@ -7,10 +7,11 @@ import Storage.CarStorage;
 public class Dealer extends Thread {
 // fields:
     private CarStorage storage;
-    private static int deltaTime = 1000;
+    private GUI.DeltaTimeManager timeManager;
 // constructor
-    public Dealer(CarStorage storage) {
+    public Dealer(CarStorage storage, GUI.DeltaTimeManager timeManager) {
         this.storage = storage;
+        this.timeManager = timeManager;
     }
 // main run method (get car from storage with deltaTime interval)
     @Override
@@ -18,7 +19,7 @@ public class Dealer extends Thread {
         while(true) {
             Car car = storage.get();
             try {
-                Thread.sleep(deltaTime);
+                Thread.sleep(timeManager.getDeltaTime());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

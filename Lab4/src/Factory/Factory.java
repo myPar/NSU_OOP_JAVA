@@ -1,6 +1,7 @@
 package Factory;
 
 import FactoryObjects.FactoryObject;
+import GUI.DeltaTimeManager;
 import Log.FactoryLogger;
 import Storage.Storage;
 
@@ -23,6 +24,8 @@ public class Factory {
     private Storage storageReference;
     // Factory logger
     private FactoryLogger logger;
+    // delta time manager
+    DeltaTimeManager timeManager;
 // constructor
     public Factory(FactoryObject.Type type, Storage ref) {
         // factory should be configured
@@ -40,9 +43,11 @@ public class Factory {
         storageReference = ref;
         // init logger
         logger = new FactoryLogger(type.toString() + "FactoryLogger", logFilesNames[type.getValue()]);
+        // init deltaTime
+        timeManager = new DeltaTimeManager();
         // create suppliers
         for (int i = 0; i < suppliersCount; i++) {
-            suppliers[i] = new Supplier(type, storageReference, logger);
+            suppliers[i] = new Supplier(type, storageReference, logger, timeManager);
         }
     }
 // Factory config method
@@ -57,6 +62,10 @@ public class Factory {
         suppliersCounts[2] = count3;
         // Factory class has been configured
         isConfigured = true;
+    }
+// get time manager
+    public DeltaTimeManager getTimeManager() {
+        return timeManager;
     }
 // main run method
     public void run() {

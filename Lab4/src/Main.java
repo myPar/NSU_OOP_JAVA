@@ -2,6 +2,7 @@ import Config.Configurator;
 import Controller.Controller;
 import Factory.Factory;
 import FactoryObjects.FactoryObject;
+import GUI.GUI;
 import Shop.CarShop;
 import Storage.Storage;
 import Storage.CarStorage;
@@ -25,11 +26,15 @@ public class Main {
         CarShop shop = new CarShop(carStorage);
         // init Controller
         Controller controller = new Controller(carStorage, carFactory);
+        // init GUI
+        GUI gui = new GUI(motorStorage, bodyStorage, accessoryStorage, carStorage, motorFactory, bodyFactory, accessoryFactory, shop);
+        gui.start();
         // run all
         motorFactory.run();
         bodyFactory.run();
         accessoryFactory.run();
         shop.run();
+
         controller.run();
     }
 }

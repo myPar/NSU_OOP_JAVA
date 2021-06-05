@@ -123,4 +123,13 @@ public class CarStorage {
 
         return result;
     }
+// GUI methods:
+    // synchronized getting car count method
+    public synchronized int getCount() {
+        return storage.size();
+    }
+    // synchronized getting sanded car count method
+    public synchronized int getSandedCount() {
+        return carGotCount;
+    }
 }

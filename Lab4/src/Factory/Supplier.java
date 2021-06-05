@@ -11,12 +11,12 @@ public class Supplier extends Thread {
     private FactoryObject.Type type;
     // reference to storage
     private Storage storageReference;
-    // delta time of supplying
-    private int deltaTime;
     // Factory logger
     FactoryLogger logger;
+    // time manager
+    GUI.DeltaTimeManager timeManager;
 // constructor:
-    public Supplier(FactoryObject.Type type, Storage ref, FactoryLogger logger) {
+    public Supplier(FactoryObject.Type type, Storage ref, FactoryLogger logger, GUI.DeltaTimeManager timeManager) {
         // storage type and supplier type should be equal
         assert ref.getType() == type;
         // supplier can only put Details not cars
@@ -25,7 +25,7 @@ public class Supplier extends Thread {
         this.type = type;
         this.storageReference = ref;
         this.logger = logger;
-        deltaTime = 4000;
+        this.timeManager = timeManager;
     }
 // put methods:
     // put detail to storage method
@@ -57,7 +57,7 @@ public class Supplier extends Thread {
         while (true) {
             putDetail();
             try {
-                Thread.sleep(deltaTime);
+                Thread.sleep(timeManager.getDeltaTime());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
