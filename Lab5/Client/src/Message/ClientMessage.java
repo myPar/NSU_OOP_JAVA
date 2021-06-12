@@ -1,11 +1,13 @@
 package Message;
 
+import java.io.Serializable;
+
 // Client message to server
-public class ClientMessage {
-//enums:
+public class ClientMessage implements Serializable {
+    //enums:
     // user message types enum
     public enum MessageType{LOGIN, LIST, MESSAGE, LOGOUT}
-// fields:
+    // fields:
     // message type
     private MessageType type;
     // message data
@@ -40,7 +42,7 @@ public class ClientMessage {
         copyData(data, args);
         this.type = type;
     }
-// static methods:
+    // static methods:
     // need for id checking
     static boolean isNumber(String str) {
         try {
@@ -60,7 +62,7 @@ public class ClientMessage {
 
         System.arraycopy(src, 0, dst, 0, length);
     }
-// getters:
+    // getters:
     public MessageType getType() {
         return type;
     }

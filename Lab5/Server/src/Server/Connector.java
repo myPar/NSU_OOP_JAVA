@@ -14,7 +14,7 @@ public class Connector {
         private ExceptionType type;
         private String description;
 
-        public DataInputException(ExceptionType t, String d) {
+        DataInputException(ExceptionType t, String d) {
             type = t;
             description = d;
         }
@@ -33,6 +33,8 @@ public class Connector {
     // input and output socket streams
     private BufferedReader reader;
     private BufferedWriter writer;
+    private ObjectInputStream serialReader;
+    private ObjectOutputStream serialWriter;
     // message type (TEXT, XML, SERIALIZE)
     private Server.MessageType type;
 // constructor:
@@ -40,15 +42,32 @@ public class Connector {
         try {
             this.type = type;
             this.clientSocket = socket;
+
             this.reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             this.writer = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
+            // init serialize input output
+            this.serialReader = new ObjectInputStream(clientSocket.getInputStream());
+            this.serialWriter = new ObjectOutputStream(clientSocket.getOutputStream());
         } catch (IOException e) {
             // TODO write exception handling
         }
     }
 // methods:    
     public ClientMessage getMessage() throws DataInputException{
-        return parseMessage();
+        ClientMessage result = null;
+
+        switch (type) {
+            case SERIALISE:
+                result = getSerializeMessage();
+                break;
+            case XML:
+            case TEXT:
+                result = parseMessage();
+                break;
+            default:
+                assert false;
+        }
+        return result;
     }
 
     public void sendMessage(ServerMessage message) {
@@ -69,7 +88,11 @@ public class Connector {
 // send:
     // send serialize message method
     private void sendSerialize(ServerMessage message) {
-
+        try {
+            serialWriter.writeObject(message);
+        } catch (IOException e) {
+            // TODO handle exception
+        }
     }
 
     // send XML message method
@@ -80,12 +103,22 @@ public class Connector {
     private void sendText(ServerMessage message) {
     }
 // receive:
-    // read next message method
+    // get next serialize message method
+    private ClientMessage getSerializeMessage() throws DataInputException {
+        ClientMessage message;
+        try {
+            message = (ClientMessage) serialReader.readObject();
+        }
+        catch (Exception e) {
+            throw new DataInputException(DataInputException.ExceptionType.SOCKET_EXCEPTION, "can't read serialize message");
+        }
+        return message;
+    }
+    // read next XML/TEXT message method
     private String[] readNextMessage() throws IOException {
         switch (type) {
             case TEXT:
                 return reader.readLine().split(" ");
-            case SERIALISE:
             case XML:
             default:
                 assert false;

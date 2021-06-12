@@ -1,7 +1,9 @@
 package Message;
 
+import java.io.Serializable;
+
 // Server answer to client
-public class ServerMessage {
+public class ServerMessage implements Serializable {
 // enums:
     public enum MessageType {RESPONSE, UPDATE_CHAT}
     public enum Status {SUCCESS, FAIL, NO}
@@ -51,6 +53,7 @@ public class ServerMessage {
             // no NO status expected
             assert false;
         }
+        this.command = command;
         // copy data to args
         ClientMessage.copyData(data, args);
     }
@@ -59,6 +62,7 @@ public class ServerMessage {
         // update chat message (has no status)
         type = MessageType.UPDATE_CHAT;
         status = Status.NO;
+
         switch (command) {
             case LOGIN_CHAT:
             case LOGOUT_CHAT:
@@ -75,6 +79,7 @@ public class ServerMessage {
                 // only chat messages
                 assert false;
         }
+        this.command = command;
         ClientMessage.copyData(data, args);
     }
 // getters:
