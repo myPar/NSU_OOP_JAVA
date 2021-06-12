@@ -1,18 +1,16 @@
 package Message;
 
-import java.awt.*;
-import java.lang.reflect.Array;
-
 // Server answer to client
 public class ServerMessage {
-    enum MessageType {RESPONSE, UPDATE_CHAT}
-    enum Status {SUCCESS, FAIL, NO}
-    enum Command {LOGIN, LIST, MESSAGE, LOGOUT, MESSAGE_CHAT, LOGIN_CHAT, LOGOUT_CHAT}
-
+// enums:
+    public enum MessageType {RESPONSE, UPDATE_CHAT}
+    public enum Status {SUCCESS, FAIL, NO}
+    public enum Command {LOGIN, LIST, MESSAGE, LOGOUT, MESSAGE_CHAT, LOGIN_CHAT, LOGOUT_CHAT}
+// fields:
     private MessageType type;
     private Status status;
     private Command command;
-    String[] args = {};
+    private String[] args = {};
 // constructors:
     // RESPONSE message constructor
     public ServerMessage(Status status, Command command, String[] data) {
@@ -35,7 +33,7 @@ public class ServerMessage {
                 case LOGIN:
                     // arg is user unique id
                     assert data.length == 1;
-                    assert UserMessage.isNumber(data[0]);
+                    assert ClientMessage.isNumber(data[0]);
                     args = new String[1];
                     break;
                 default:
@@ -44,13 +42,17 @@ public class ServerMessage {
             }
         }
         // FAIL case
-        else {
+        else if (status == Status.FAIL){
             // data: reason of the fail
             assert data.length == 1;
             args = new String[1];
         }
+        else {
+            // no NO status expected
+            assert false;
+        }
         // copy data to args
-        UserMessage.copyData(data, args);
+        ClientMessage.copyData(data, args);
     }
 // UPDATE_CHAT message constructor
     public ServerMessage(Command command, String[] data) {
@@ -73,7 +75,7 @@ public class ServerMessage {
                 // only chat messages
                 assert false;
         }
-        UserMessage.copyData(data, args);
+        ClientMessage.copyData(data, args);
     }
 // getters:
     public final String[] getArgs() {

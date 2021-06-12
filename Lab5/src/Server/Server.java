@@ -1,8 +1,12 @@
 package Server;
 
+import Data.UserData;
+import Data.UserDataStorage;
+import Message.ClientMessage;
+import Message.ServerMessage;
 import ThreadPool.ThreadPool;
+import ThreadPool.Task;
 
-import javax.security.auth.callback.TextInputCallback;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -12,24 +16,42 @@ import java.util.Scanner;
 
 public class Server {
 // inner classes end enums:
-    public enum MessageType{XML, SERIALISE}
-    // Server.Socket handler class: handles events of sockets state update
-    private class SocketHandler extends Thread {
-        @Override
-        public void run() {
-
-        }
-    }
+    enum MessageType{XML, SERIALISE, TEXT}
     // Connection controller class: accepts newly connected sockets
     private class ConnectionController extends Thread {
         @Override
         public void run() {
             while (true) {
                 try {
-                    // accept connection
+                    // accept connection (blocking method)
                     Socket socket = serverSocket.accept();
+                    // create Connector obj with got socket
+                    Connector connector = new Connector(type, socket);
 
-                } catch (IOException e) {
+                    // get message (Client accepts with login authentication data, so there is login data)
+                    ClientMessage message = connector.getMessage();
+                    // check message
+                    if (message.getType() != ClientMessage.MessageType.LOGIN) {
+                        // response fail
+                        String[] args = {"Invalid message type: " + message.getType() +   ". LOGIN expected"};
+                        ServerMessage failResponse = new ServerMessage(ServerMessage.Status.FAIL, ServerMessage.Command.LOGIN, args);
+                        connector.sendMessage(failResponse);
+                        // try accept next socket
+                        continue;
+                    }
+                    // get User name
+                    String userName = message.getArgs()[0];
+                    // get new id
+                    int id = getUniqueId();
+
+                    // create User Data:
+                    UserData data = new UserData(connector, id, userName);
+                    // add user data to data storage
+                    userDataStorage.addUser(data);
+                    // add new Task to thread pool
+                    threadPool.addTask(new Task(data, threadPool, userDataStorage));
+                }
+                catch (IOException e) {
                     System.err.println("ServerSocket exception: can't accept connection");
                     System.exit(1);
                 }
@@ -47,15 +69,15 @@ public class Server {
     private static int portNumber;
 // non static fields:
     // locking thread-save map of pairs: <User_ID, Socket>
-    private SocketMap socketMap;
+    private UserDataStorage userDataStorage;
     // server socket
     private ServerSocket serverSocket;
-    // SocketHandler
-    private SocketHandler socketHandler;
     // Connection controller
     private ConnectionController controller;
     // reference to ThreadPool
     private ThreadPool threadPool;
+    // current max user id - 1
+    private int maxId;
 // constructor
     public Server() {
         assert isConfigured;
@@ -67,10 +89,10 @@ public class Server {
             System.exit(1);
         }
         // init other fields:
-        socketMap = new SocketMap();
-        socketHandler = new SocketHandler();
+        userDataStorage = new UserDataStorage();
         controller = new ConnectionController();
         threadPool = new ThreadPool(maxClientsCount);
+        maxId = -1;
     }
 // other methods:
     // configure method
@@ -99,15 +121,19 @@ public class Server {
             System.exit(1);
         }
         // check message type:
-        if (type.equals("XML")) {
-            Server.type = MessageType.XML;
-        }
-        else if (type.equals("SERIALISE")) {
-            Server.type = MessageType.SERIALISE;
-        }
-        else {
-            System.err.println("can't configure server: invalid message type: " + type + ". should be 'XML' or 'SERIALISE'");
-            System.exit(1);
+        switch (type) {
+            case "XML":
+                Server.type = MessageType.XML;
+                break;
+            case "SERIALISE":
+                Server.type = MessageType.SERIALISE;
+                break;
+            case "TEXT":
+                Server.type = MessageType.TEXT;
+                break;
+            default:
+                System.err.println("can't configure server: invalid message type: " + type + ". should be 'XML' or 'SERIALISE' or 'TEXT'");
+                System.exit(1);
         }
         portNumber = port;
         maxClientsCount = maxCount;
@@ -117,6 +143,10 @@ public class Server {
         assert isConfigured;
 
         controller.start();
-        socketHandler.start();
     }
+    // generate unique user id method
+    private int getUniqueId() {
+        return maxId++;
+    }
+
 }

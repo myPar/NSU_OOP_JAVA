@@ -1,10 +1,10 @@
 package Message;
 
 // Client message to server
-public class UserMessage {
+public class ClientMessage {
 //enums:
     // user message types enum
-    enum MessageType{LOGIN, LIST, MESSAGE, LOGOUT}
+    public enum MessageType{LOGIN, LIST, MESSAGE, LOGOUT}
 // fields:
     // message type
     private MessageType type;
@@ -12,7 +12,7 @@ public class UserMessage {
     private String[] args;
     // login: {user_name} list: {user_id} message: {user_id, message} logout: {user_id}
 // constructor:
-    public UserMessage(MessageType type, String[] data) {
+    public ClientMessage(MessageType type, String[] data) {
         switch (type) {
             case LOGIN:
                 // one arg: user name
@@ -58,9 +58,7 @@ public class UserMessage {
         int length = src.length;
         assert length == dst.length;
 
-        for (int i = 0; i < length; i++) {
-            dst[i] = src[i];
-        }
+        System.arraycopy(src, 0, dst, 0, length);
     }
 // getters:
     public MessageType getType() {
