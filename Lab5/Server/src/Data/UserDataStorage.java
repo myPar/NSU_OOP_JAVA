@@ -43,15 +43,27 @@ public class UserDataStorage {
         message = new ServerMessage(ServerMessage.Status.SUCCESS, command, args);
         userConnector.sendMessage(message);
     }
-    // send message to chat
-    public synchronized void sendToAll(String userName, String messageText) {
+    // send message to chat (user do formatting output by itself)
+    public synchronized void sendToAll(String userName, String messageText, ServerMessage.Command command) {
         Set<Integer> keySet = userData.keySet();
 
-        String[] args = new String[2];
-        args[0] = userName;
-        args[1] = messageText;
+        String[] args = {};
+        switch(command) {
+            case MESSAGE_CHAT:
+                args = new String[2];
+                args[0] = userName;
+                args[1] = messageText;
+                break;
+            case LOGOUT_CHAT:
+            case LOGIN_CHAT:
+                args = new String[1];
+                args[0] = userName;
+                break;
+            default:
+                assert false;
+        }
         // create message
-        ServerMessage message = new ServerMessage(ServerMessage.Command.MESSAGE_CHAT, args);
+        ServerMessage message = new ServerMessage(command, args);
 
         // send message to all users
         for (int key: keySet) {

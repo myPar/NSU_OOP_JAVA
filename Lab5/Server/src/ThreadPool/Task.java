@@ -25,15 +25,22 @@ public class Task implements Runnable{
                 return;
             }
             int id = userData.getId();
+            String name = userData.getName();
+            // check user id
+            int idInMessage = Integer.parseInt(message.getArgs()[0]);
 
+            if (id != idInMessage) {
+                storage.sendErrorMessage(userConnector, "Id on server is not equal to id in message");
+                return;
+            }
             switch (message.getType()) {
                 case MESSAGE:
                     // send message to chat using UserDataStorage method
-                    String text = message.getArgs()[0];
+                    String text = message.getArgs()[1];
                     // success response
                     storage.sendMessage(userConnector, ServerMessage.MessageType.RESPONSE, ServerMessage.Command.MESSAGE);
                     // send message to chat
-                    storage.sendToAll(userData.getName(), text);
+                    storage.sendToAll(name, text, ServerMessage.Command.MESSAGE_CHAT);
                     // add task again
                     threadPool.addTask(new Task(userData, threadPool, storage));
                     break;
@@ -46,12 +53,10 @@ public class Task implements Runnable{
                 case LOGOUT:
                     // response user
                     storage.sendMessage(userConnector, ServerMessage.MessageType.RESPONSE, ServerMessage.Command.LOGOUT);
-                    // get user name before it logout
-                    String userName = userData.getName();
                     // remove user from UserDataStorage
                     storage.removeUser(id);
                     // send to chat
-                    storage.sendToAll("<" + userName + ">"," has been LOGOUT");
+                    storage.sendToAll(name,"", ServerMessage.Command.LOGOUT_CHAT);
                 default:
                     // could not be a login message
                     assert false;

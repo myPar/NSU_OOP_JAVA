@@ -4,8 +4,11 @@ import Message.ClientMessage;
 import Message.Connector;
 import Message.ServerMessage;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.Scanner;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Client {
@@ -23,7 +26,11 @@ public class Client {
                     System.out.println("Response on command: " + message.getCommand() + ": " + message.getStatus());
 
                     if (message.getCommand() == ServerMessage.Command.LIST) {
-                        printUsers(message.getArgs());
+                        gui.addUserList(message.getArgs());
+                    }
+                    else if (message.getCommand() == ServerMessage.Command.LOGOUT) {
+                        System.out.println("Client LOGOUT from Server");
+                        System.exit(0);
                     }
                 }
                 // TO CHAT messages:
@@ -79,9 +86,9 @@ public class Client {
     }
     private Connector connector;
     // number of port
-    private int portNumber;
+    private static int portNumber;
     // type XML/TEXT/SERIAL
-    private MessageType type;
+    private static MessageType type;
     // unique client id
     private int id;
     // user name
@@ -95,15 +102,53 @@ public class Client {
     private LinkedBlockingQueue<UserGUI.ButtonType> events;
     // current message to send
     private String currentMessage;
+    // client config flag
+    private static boolean isConfigured = false;
 // constructor:
-    public Client(int portNumber, MessageType type, String userName, UserGUI gui) {
-        this.portNumber = portNumber;
-        this.type = type;
+    public Client(String userName) {
+        assert isConfigured;
+
         this.userName = userName;
-        this.gui = gui;
+        this.gui = new UserGUI(this);
         serverMessageHandler = new ServerMessageHandler();
         outputMessageHandler = new OutputMessageHandler();
         events = new LinkedBlockingQueue<>(10);
+    }
+// configure method
+    public static void config(String configFileName) {
+        isConfigured = true;
+        File configFile = new File(configFileName);
+        Scanner sc = null;
+
+        try {
+            sc = new Scanner(configFile);
+        } catch (FileNotFoundException e) {
+            System.err.println("can't configure client: config file not found");
+            System.exit(1);
+        }
+        portNumber = Integer.parseInt(sc.nextLine());
+        String type = sc.nextLine();
+
+        // check port number
+        if (portNumber < 0) {
+            System.err.println("can't configure server: invalid port number: " + portNumber + ". Should be a non negative value");
+            System.exit(1);
+        }
+        // check message type:
+        switch (type) {
+            case "XML":
+                Client.type = MessageType.XML;
+                break;
+            case "SERIALISE":
+                Client.type = MessageType.SERIALISE;
+                break;
+            case "TEXT":
+                Client.type = MessageType.TEXT;
+                break;
+            default:
+                System.err.println("can't configure server: invalid message type: " + type + ". should be 'XML' or 'SERIALISE' or 'TEXT'");
+                System.exit(1);
+        }
     }
 // methods:
     // run Client method
@@ -113,6 +158,7 @@ public class Client {
             System.exit(0);
         }
         // start handlers
+        gui.viewGUI();
         serverMessageHandler.start();
         outputMessageHandler.start();
     }
@@ -120,6 +166,12 @@ public class Client {
         try {
             // client socket
             Socket clientSocket = new Socket("localhost", portNumber);
+            if (clientSocket.isConnected()) {
+                System.out.println("Connected");
+            }
+            else {
+                System.out.println("No connection");
+            }
             Connector connector = new Connector(type, clientSocket);
             this.connector = connector;
             // send authentication data to server:
@@ -128,9 +180,10 @@ public class Client {
             connector.sendMessage(message);
             // get response from server
             ServerMessage response = connector.getMessage();
-
+            System.out.println(response.getCommand().toString());
             if (response.getStatus() == ServerMessage.Status.SUCCESS) {
                 if (response.getCommand() == ServerMessage.Command.LOGIN) {
+                    System.out.println("Login succeeded");
                     this.id = Integer.parseInt(response.getArgs()[0]);
                     // login succeed
                     return true;

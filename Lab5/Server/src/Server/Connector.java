@@ -43,8 +43,8 @@ public class Connector {
             this.type = type;
             this.clientSocket = socket;
 
-            this.reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-            this.writer = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
+//            this.reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+//            this.writer = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
             // init serialize input output
             this.serialReader = new ObjectInputStream(clientSocket.getInputStream());
             this.serialWriter = new ObjectOutputStream(clientSocket.getOutputStream());
@@ -55,7 +55,6 @@ public class Connector {
 // methods:    
     public ClientMessage getMessage() throws DataInputException{
         ClientMessage result = null;
-
         switch (type) {
             case SERIALISE:
                 result = getSerializeMessage();
@@ -180,6 +179,8 @@ public class Connector {
 // close socket method
     public void close() {
         try {
+            serialReader.close();
+            serialWriter.close();
             clientSocket.close();
         } catch (IOException e) {
             //TODO write exception handling

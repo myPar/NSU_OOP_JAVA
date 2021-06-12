@@ -54,6 +54,7 @@ public class ServerMessage implements Serializable {
             assert false;
         }
         this.command = command;
+        this.status = status;
         // copy data to args
         ClientMessage.copyData(data, args);
     }

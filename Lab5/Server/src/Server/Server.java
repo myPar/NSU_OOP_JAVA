@@ -29,7 +29,14 @@ public class Server {
                     Connector connector = new Connector(type, socket);
 
                     // get message (Client accepts with login authentication data, so there is login data)
-                    ClientMessage message = connector.getMessage();
+                    ClientMessage message;
+                    try {
+                        message = connector.getMessage();
+                    } catch (Connector.DataInputException e) {
+                        System.err.println("Login failed: exception while login message receiving");
+                        // try accept next socket
+                        continue;
+                    }
                     // check message
                     if (message.getType() != ClientMessage.MessageType.LOGIN) {
                         // response fail
@@ -48,6 +55,13 @@ public class Server {
                     UserData data = new UserData(connector, id, userName);
                     // add user data to data storage
                     userDataStorage.addUser(data);
+
+                    // send id to LOGIN user
+                    String[] args = {String.valueOf(id)};
+                    connector.sendMessage(new ServerMessage(ServerMessage.Status.SUCCESS, ServerMessage.Command.LOGIN, args));
+                    // send LOGIN message to chat
+                    userDataStorage.sendToAll(userName, "", ServerMessage.Command.LOGIN_CHAT);
+
                     // add new Task to thread pool
                     threadPool.addTask(new Task(data, threadPool, userDataStorage));
                 }
@@ -107,9 +121,10 @@ public class Server {
             System.exit(1);
         }
         // read port number
-        int port = sc.nextInt();
-        int maxCount = sc.nextInt();
+        int port = Integer.parseInt(sc.nextLine());
         String type = sc.nextLine();
+        int maxCount = Integer.parseInt(sc.nextLine());
+
         // check port number:
         if (port < 0) {
             System.err.println("can't configure server: invalid port number: " + port + ". Should be a non negative value");

@@ -10,28 +10,34 @@ import java.net.Socket;
 // implements reading/writing messages
 public class Connector {
     // reader and writer
-    private ObjectInputStream serialReader;
-    private ObjectOutputStream serialWriter;
+    private ObjectInputStream serialReader = null;
+    private ObjectOutputStream serialWriter = null;
     // message types
     private Client.MessageType type;
     // opened socket
     private Socket clientSocket;
 
     public Connector(Client.MessageType type, Socket socket) {
-        try {
+        //try {
             this.type = type;
             this.clientSocket = socket;
-            this.serialReader = new ObjectInputStream(clientSocket.getInputStream());
+         /*   this.serialReader = new ObjectInputStream(clientSocket.getInputStream());
             this.serialWriter = new ObjectOutputStream(clientSocket.getOutputStream());
         }
         catch (IOException e) {
             //TODO handle exception
             assert false;
         }
+
+        */
     }
     // main get message method
     public ServerMessage getMessage() {
         ServerMessage result = null;
+        try {
+            if (serialReader == null) {
+                this.serialReader = new ObjectInputStream(clientSocket.getInputStream());
+            }
 
         switch (type) {
             case SERIALISE:
@@ -44,21 +50,35 @@ public class Connector {
             default:
                 assert false;
         }
+            //serialReader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
         return result;
     }
     // main send message method
     public void sendMessage(ClientMessage message) {
-        switch (type) {
-            case XML:
-                //TODO sendXML(message);
-                break;
-            case SERIALISE:
-                sendSerialize(message);
-                break;
-            case TEXT:
-                //TODO sendText(message);
-            default:
-                assert false;
+
+        try {
+            if (serialWriter == null) {
+                this.serialWriter = new ObjectOutputStream(clientSocket.getOutputStream());
+            }
+            switch (type) {
+                case XML:
+                    //TODO sendXML(message);
+                    break;
+                case SERIALISE:
+                    sendSerialize(message);
+                    break;
+                case TEXT:
+                    //TODO sendText(message);
+                default:
+                    assert false;
+            }
+            //serialWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 // other methods:
