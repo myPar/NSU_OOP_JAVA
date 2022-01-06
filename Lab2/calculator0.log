@@ -1,0 +1,287 @@
+Apr 11, 2021 11:14:36 PM Main main
+INFO: Args number: 1
+Apr 11, 2021 11:14:36 PM Main main
+INFO: calculator's data source: file
+Apr 11, 2021 11:14:36 PM Main main
+INFO: Scanner has been configured. calculate method call:
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: factory configuration:
+
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: getting configuration resource data
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: parsing of config file:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: configured command: name - Add. class name: Command.Add
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading class: Command.Add
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: command superclass checking:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking command name and command class name equality:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: configured command: name - Sub. class name: Command.Sub
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading class: Command.Sub
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: command superclass checking:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking command name and command class name equality:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: configured command: name - Mul. class name: Command.Mul
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading class: Command.Mul
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: command superclass checking:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking command name and command class name equality:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: configured command: name - Div. class name: Command.Div
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading class: Command.Div
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: command superclass checking:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking command name and command class name equality:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: configured command: name - Sqrt. class name: Command.Sqrt
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading class: Command.Sqrt
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: command superclass checking:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking command name and command class name equality:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: configured command: name - Push. class name: Command.Push
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading class: Command.Push
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: command superclass checking:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking command name and command class name equality:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: configured command: name - Pop. class name: Command.Pop
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading class: Command.Pop
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: command superclass checking:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking command name and command class name equality:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: configured command: name - Print. class name: Command.Print
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading class: Command.Print
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: command superclass checking:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking command name and command class name equality:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: configured command: name - Define. class name: Command.Define
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading class: Command.Define
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: loading succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: command superclass checking:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking command name and command class name equality:
+Apr 11, 2021 11:14:36 PM Command.Command config
+INFO: checking succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: factory has been configured
+
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: parsing input data:
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: comment string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Push. class name: Push
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Push execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+WARNING: command Push execution failed
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Push. class name: Push
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Push execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Push execution succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Push. class name: Push
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Push execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Push execution succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Define. class name: Define
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Define execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Define execution succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Define. class name: Define
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Define execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Define execution succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Push. class name: Push
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Push execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Push execution succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: comment string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Push. class name: Push
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Push execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Push execution succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Add. class name: Add
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Add execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Add execution succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Add. class name: Add
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Add execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Add execution succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Div. class name: Div
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Div execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Div execution succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Print. class name: Print
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Print execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Print execution succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Push. class name: Push
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Push execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Push execution succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Mul. class name: Mul
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Mul execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Mul execution succeeded
+
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command string
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command: Print. class name: Print
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Print execution
+Apr 11, 2021 11:14:36 PM Calculator.Calculator calculate
+INFO: command Print execution succeeded
+
+Apr 11, 2021 11:14:36 PM Main main
+INFO: Calculator's work has been completed
