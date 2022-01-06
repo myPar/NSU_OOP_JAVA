@@ -1,0 +1,9 @@
+MotorStorageSize = 20
+BodyStorageSize = 10
+AccessoryStorageSize = 10
+CarStorageSize = 5
+MotorSuppliers = 10
+BodySuppliers = 10
+AccessorySuppliers = 10
+WorkersCount = 5
+DealersCount = 10

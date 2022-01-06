@@ -1,0 +1,1656 @@
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-30>(MOTOR<id-17>, BODY<id-0>, ACCESSORY<id-9>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-30>(MOTOR<id-17>, BODY<id-0>, ACCESSORY<id-9>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-31>(MOTOR<id-29>, BODY<id-7>, ACCESSORY<id-11>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-31>(MOTOR<id-29>, BODY<id-7>, ACCESSORY<id-11>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-32>(MOTOR<id-26>, BODY<id-6>, ACCESSORY<id-10>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-32>(MOTOR<id-26>, BODY<id-6>, ACCESSORY<id-10>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-33>(MOTOR<id-25>, BODY<id-5>, ACCESSORY<id-8>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-33>(MOTOR<id-25>, BODY<id-5>, ACCESSORY<id-8>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-34>(MOTOR<id-24>, BODY<id-4>, ACCESSORY<id-15>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-34>(MOTOR<id-24>, BODY<id-4>, ACCESSORY<id-15>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-37>(MOTOR<id-23>, BODY<id-3>, ACCESSORY<id-12>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-37>(MOTOR<id-23>, BODY<id-3>, ACCESSORY<id-12>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-36>(MOTOR<id-22>, BODY<id-2>, ACCESSORY<id-13>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-35>(MOTOR<id-21>, BODY<id-1>, ACCESSORY<id-14>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-36>(MOTOR<id-22>, BODY<id-2>, ACCESSORY<id-13>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-35>(MOTOR<id-21>, BODY<id-1>, ACCESSORY<id-14>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-38>(MOTOR<id-19>, BODY<id-16>, ACCESSORY<id-20>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-39>(MOTOR<id-18>, BODY<id-28>, ACCESSORY<id-27>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-38>(MOTOR<id-19>, BODY<id-16>, ACCESSORY<id-20>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:46 AM Log.CarFactoryLogger log
+INFO: CAR<id-39>(MOTOR<id-18>, BODY<id-28>, ACCESSORY<id-27>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-61>(MOTOR<id-55>, BODY<id-40>, ACCESSORY<id-47>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-61>(MOTOR<id-55>, BODY<id-40>, ACCESSORY<id-47>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-67>(MOTOR<id-62>, BODY<id-41>, ACCESSORY<id-48>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-67>(MOTOR<id-62>, BODY<id-41>, ACCESSORY<id-48>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-70>(MOTOR<id-63>, BODY<id-42>, ACCESSORY<id-49>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-70>(MOTOR<id-63>, BODY<id-42>, ACCESSORY<id-49>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-71>(MOTOR<id-64>, BODY<id-43>, ACCESSORY<id-50>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-71>(MOTOR<id-64>, BODY<id-43>, ACCESSORY<id-50>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-74>(MOTOR<id-65>, BODY<id-44>, ACCESSORY<id-53>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-75>(MOTOR<id-66>, BODY<id-45>, ACCESSORY<id-54>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-74>(MOTOR<id-65>, BODY<id-44>, ACCESSORY<id-53>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-75>(MOTOR<id-66>, BODY<id-45>, ACCESSORY<id-54>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-76>(MOTOR<id-68>, BODY<id-46>, ACCESSORY<id-56>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-76>(MOTOR<id-68>, BODY<id-46>, ACCESSORY<id-56>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-77>(MOTOR<id-69>, BODY<id-51>, ACCESSORY<id-57>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-77>(MOTOR<id-69>, BODY<id-51>, ACCESSORY<id-57>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-78>(MOTOR<id-72>, BODY<id-52>, ACCESSORY<id-58>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-78>(MOTOR<id-72>, BODY<id-52>, ACCESSORY<id-58>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-79>(MOTOR<id-73>, BODY<id-60>, ACCESSORY<id-59>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:47 AM Log.CarFactoryLogger log
+INFO: CAR<id-79>(MOTOR<id-73>, BODY<id-60>, ACCESSORY<id-59>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-101>(MOTOR<id-96>, BODY<id-80>, ACCESSORY<id-87>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-101>(MOTOR<id-96>, BODY<id-80>, ACCESSORY<id-87>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-105>(MOTOR<id-102>, BODY<id-81>, ACCESSORY<id-88>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-105>(MOTOR<id-102>, BODY<id-81>, ACCESSORY<id-88>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-106>(MOTOR<id-103>, BODY<id-82>, ACCESSORY<id-89>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-106>(MOTOR<id-103>, BODY<id-82>, ACCESSORY<id-89>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-109>(MOTOR<id-104>, BODY<id-83>, ACCESSORY<id-90>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-109>(MOTOR<id-104>, BODY<id-83>, ACCESSORY<id-90>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-110>(MOTOR<id-107>, BODY<id-84>, ACCESSORY<id-91>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-110>(MOTOR<id-107>, BODY<id-84>, ACCESSORY<id-91>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-111>(MOTOR<id-108>, BODY<id-85>, ACCESSORY<id-94>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-111>(MOTOR<id-108>, BODY<id-85>, ACCESSORY<id-94>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-116>(MOTOR<id-112>, BODY<id-86>, ACCESSORY<id-95>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-116>(MOTOR<id-112>, BODY<id-86>, ACCESSORY<id-95>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-117>(MOTOR<id-113>, BODY<id-92>, ACCESSORY<id-97>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-117>(MOTOR<id-113>, BODY<id-92>, ACCESSORY<id-97>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-118>(MOTOR<id-114>, BODY<id-93>, ACCESSORY<id-98>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-118>(MOTOR<id-114>, BODY<id-93>, ACCESSORY<id-98>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-119>(MOTOR<id-115>, BODY<id-100>, ACCESSORY<id-99>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:48 AM Log.CarFactoryLogger log
+INFO: CAR<id-119>(MOTOR<id-115>, BODY<id-100>, ACCESSORY<id-99>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-141>(MOTOR<id-140>, BODY<id-120>, ACCESSORY<id-127>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-141>(MOTOR<id-140>, BODY<id-120>, ACCESSORY<id-127>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-145>(MOTOR<id-142>, BODY<id-121>, ACCESSORY<id-128>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-145>(MOTOR<id-142>, BODY<id-121>, ACCESSORY<id-128>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-146>(MOTOR<id-144>, BODY<id-122>, ACCESSORY<id-129>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-146>(MOTOR<id-144>, BODY<id-122>, ACCESSORY<id-129>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-149>(MOTOR<id-143>, BODY<id-123>, ACCESSORY<id-130>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-149>(MOTOR<id-143>, BODY<id-123>, ACCESSORY<id-130>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-150>(MOTOR<id-147>, BODY<id-124>, ACCESSORY<id-131>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-150>(MOTOR<id-147>, BODY<id-124>, ACCESSORY<id-131>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-151>(MOTOR<id-148>, BODY<id-125>, ACCESSORY<id-133>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-151>(MOTOR<id-148>, BODY<id-125>, ACCESSORY<id-133>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-156>(MOTOR<id-152>, BODY<id-126>, ACCESSORY<id-135>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-156>(MOTOR<id-152>, BODY<id-126>, ACCESSORY<id-135>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-157>(MOTOR<id-155>, BODY<id-132>, ACCESSORY<id-137>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-157>(MOTOR<id-155>, BODY<id-132>, ACCESSORY<id-137>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-158>(MOTOR<id-154>, BODY<id-134>, ACCESSORY<id-136>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-158>(MOTOR<id-154>, BODY<id-134>, ACCESSORY<id-136>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-159>(MOTOR<id-153>, BODY<id-138>, ACCESSORY<id-139>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:49 AM Log.CarFactoryLogger log
+INFO: CAR<id-159>(MOTOR<id-153>, BODY<id-138>, ACCESSORY<id-139>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-170>(MOTOR<id-167>, BODY<id-160>, ACCESSORY<id-169>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-170>(MOTOR<id-167>, BODY<id-160>, ACCESSORY<id-169>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-183>(MOTOR<id-182>, BODY<id-161>, ACCESSORY<id-168>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-183>(MOTOR<id-182>, BODY<id-161>, ACCESSORY<id-168>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-185>(MOTOR<id-184>, BODY<id-162>, ACCESSORY<id-173>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-185>(MOTOR<id-184>, BODY<id-162>, ACCESSORY<id-173>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-187>(MOTOR<id-186>, BODY<id-163>, ACCESSORY<id-172>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-187>(MOTOR<id-186>, BODY<id-163>, ACCESSORY<id-172>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-189>(MOTOR<id-188>, BODY<id-164>, ACCESSORY<id-175>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-189>(MOTOR<id-188>, BODY<id-164>, ACCESSORY<id-175>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-191>(MOTOR<id-190>, BODY<id-165>, ACCESSORY<id-176>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-191>(MOTOR<id-190>, BODY<id-165>, ACCESSORY<id-176>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-196>(MOTOR<id-193>, BODY<id-166>, ACCESSORY<id-177>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-196>(MOTOR<id-193>, BODY<id-166>, ACCESSORY<id-177>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-197>(MOTOR<id-192>, BODY<id-171>, ACCESSORY<id-178>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-197>(MOTOR<id-192>, BODY<id-171>, ACCESSORY<id-178>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-198>(MOTOR<id-194>, BODY<id-174>, ACCESSORY<id-180>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-198>(MOTOR<id-194>, BODY<id-174>, ACCESSORY<id-180>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-199>(MOTOR<id-195>, BODY<id-179>, ACCESSORY<id-181>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:50 AM Log.CarFactoryLogger log
+INFO: CAR<id-199>(MOTOR<id-195>, BODY<id-179>, ACCESSORY<id-181>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-210>(MOTOR<id-207>, BODY<id-200>, ACCESSORY<id-208>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-210>(MOTOR<id-207>, BODY<id-200>, ACCESSORY<id-208>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-226>(MOTOR<id-223>, BODY<id-202>, ACCESSORY<id-211>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-226>(MOTOR<id-223>, BODY<id-202>, ACCESSORY<id-211>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-227>(MOTOR<id-224>, BODY<id-203>, ACCESSORY<id-212>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-228>(MOTOR<id-218>, BODY<id-201>, ACCESSORY<id-209>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-228>(MOTOR<id-218>, BODY<id-201>, ACCESSORY<id-209>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-227>(MOTOR<id-224>, BODY<id-203>, ACCESSORY<id-212>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-229>(MOTOR<id-225>, BODY<id-204>, ACCESSORY<id-215>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-229>(MOTOR<id-225>, BODY<id-204>, ACCESSORY<id-215>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-231>(MOTOR<id-230>, BODY<id-205>, ACCESSORY<id-216>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-231>(MOTOR<id-230>, BODY<id-205>, ACCESSORY<id-216>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-236>(MOTOR<id-232>, BODY<id-206>, ACCESSORY<id-221>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-236>(MOTOR<id-232>, BODY<id-206>, ACCESSORY<id-221>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-237>(MOTOR<id-234>, BODY<id-213>, ACCESSORY<id-222>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-237>(MOTOR<id-234>, BODY<id-213>, ACCESSORY<id-222>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-238>(MOTOR<id-233>, BODY<id-214>, ACCESSORY<id-220>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-239>(MOTOR<id-235>, BODY<id-217>, ACCESSORY<id-219>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-238>(MOTOR<id-233>, BODY<id-214>, ACCESSORY<id-220>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:51 AM Log.CarFactoryLogger log
+INFO: CAR<id-239>(MOTOR<id-235>, BODY<id-217>, ACCESSORY<id-219>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-257>(MOTOR<id-247>, BODY<id-240>, ACCESSORY<id-249>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-257>(MOTOR<id-247>, BODY<id-240>, ACCESSORY<id-249>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-266>(MOTOR<id-259>, BODY<id-241>, ACCESSORY<id-250>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-266>(MOTOR<id-259>, BODY<id-241>, ACCESSORY<id-250>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-267>(MOTOR<id-265>, BODY<id-243>, ACCESSORY<id-251>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-267>(MOTOR<id-265>, BODY<id-243>, ACCESSORY<id-251>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-268>(MOTOR<id-264>, BODY<id-242>, ACCESSORY<id-254>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-268>(MOTOR<id-264>, BODY<id-242>, ACCESSORY<id-254>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-269>(MOTOR<id-261>, BODY<id-244>, ACCESSORY<id-255>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-269>(MOTOR<id-261>, BODY<id-244>, ACCESSORY<id-255>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-275>(MOTOR<id-270>, BODY<id-245>, ACCESSORY<id-256>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-275>(MOTOR<id-270>, BODY<id-245>, ACCESSORY<id-256>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-276>(MOTOR<id-272>, BODY<id-246>, ACCESSORY<id-258>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-276>(MOTOR<id-272>, BODY<id-246>, ACCESSORY<id-258>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-277>(MOTOR<id-273>, BODY<id-248>, ACCESSORY<id-260>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-278>(MOTOR<id-274>, BODY<id-252>, ACCESSORY<id-262>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-277>(MOTOR<id-273>, BODY<id-248>, ACCESSORY<id-260>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-278>(MOTOR<id-274>, BODY<id-252>, ACCESSORY<id-262>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-279>(MOTOR<id-271>, BODY<id-253>, ACCESSORY<id-263>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:52 AM Log.CarFactoryLogger log
+INFO: CAR<id-279>(MOTOR<id-271>, BODY<id-253>, ACCESSORY<id-263>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-290>(MOTOR<id-287>, BODY<id-280>, ACCESSORY<id-289>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-290>(MOTOR<id-287>, BODY<id-280>, ACCESSORY<id-289>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-304>(MOTOR<id-302>, BODY<id-281>, ACCESSORY<id-291>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-304>(MOTOR<id-302>, BODY<id-281>, ACCESSORY<id-291>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-305>(MOTOR<id-303>, BODY<id-282>, ACCESSORY<id-292>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-305>(MOTOR<id-303>, BODY<id-282>, ACCESSORY<id-292>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-307>(MOTOR<id-306>, BODY<id-283>, ACCESSORY<id-293>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-307>(MOTOR<id-306>, BODY<id-283>, ACCESSORY<id-293>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-314>(MOTOR<id-310>, BODY<id-286>, ACCESSORY<id-296>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-314>(MOTOR<id-310>, BODY<id-286>, ACCESSORY<id-296>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-315>(MOTOR<id-309>, BODY<id-285>, ACCESSORY<id-295>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-316>(MOTOR<id-308>, BODY<id-284>, ACCESSORY<id-294>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-315>(MOTOR<id-309>, BODY<id-285>, ACCESSORY<id-295>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-316>(MOTOR<id-308>, BODY<id-284>, ACCESSORY<id-294>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-317>(MOTOR<id-313>, BODY<id-288>, ACCESSORY<id-297>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-318>(MOTOR<id-312>, BODY<id-299>, ACCESSORY<id-298>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-318>(MOTOR<id-312>, BODY<id-299>, ACCESSORY<id-298>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-317>(MOTOR<id-313>, BODY<id-288>, ACCESSORY<id-297>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-319>(MOTOR<id-311>, BODY<id-300>, ACCESSORY<id-301>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:53 AM Log.CarFactoryLogger log
+INFO: CAR<id-319>(MOTOR<id-311>, BODY<id-300>, ACCESSORY<id-301>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-330>(MOTOR<id-328>, BODY<id-320>, ACCESSORY<id-327>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-330>(MOTOR<id-328>, BODY<id-320>, ACCESSORY<id-327>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-337>(MOTOR<id-336>, BODY<id-321>, ACCESSORY<id-331>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-337>(MOTOR<id-336>, BODY<id-321>, ACCESSORY<id-331>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-340>(MOTOR<id-338>, BODY<id-323>, ACCESSORY<id-333>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-341>(MOTOR<id-339>, BODY<id-324>, ACCESSORY<id-332>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-341>(MOTOR<id-339>, BODY<id-324>, ACCESSORY<id-332>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-340>(MOTOR<id-338>, BODY<id-323>, ACCESSORY<id-333>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-344>(MOTOR<id-342>, BODY<id-322>, ACCESSORY<id-334>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-345>(MOTOR<id-343>, BODY<id-325>, ACCESSORY<id-335>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-344>(MOTOR<id-342>, BODY<id-322>, ACCESSORY<id-334>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-345>(MOTOR<id-343>, BODY<id-325>, ACCESSORY<id-335>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-355>(MOTOR<id-347>, BODY<id-326>, ACCESSORY<id-349>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-355>(MOTOR<id-347>, BODY<id-326>, ACCESSORY<id-349>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-356>(MOTOR<id-346>, BODY<id-329>, ACCESSORY<id-351>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-356>(MOTOR<id-346>, BODY<id-329>, ACCESSORY<id-351>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-357>(MOTOR<id-348>, BODY<id-353>, ACCESSORY<id-352>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-357>(MOTOR<id-348>, BODY<id-353>, ACCESSORY<id-352>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-359>(MOTOR<id-354>, BODY<id-358>, ACCESSORY<id-350>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:54 AM Log.CarFactoryLogger log
+INFO: CAR<id-359>(MOTOR<id-354>, BODY<id-358>, ACCESSORY<id-350>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-370>(MOTOR<id-367>, BODY<id-360>, ACCESSORY<id-369>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-370>(MOTOR<id-367>, BODY<id-360>, ACCESSORY<id-369>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-377>(MOTOR<id-376>, BODY<id-361>, ACCESSORY<id-371>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-377>(MOTOR<id-376>, BODY<id-361>, ACCESSORY<id-371>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-380>(MOTOR<id-378>, BODY<id-364>, ACCESSORY<id-372>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-380>(MOTOR<id-378>, BODY<id-364>, ACCESSORY<id-372>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-384>(MOTOR<id-379>, BODY<id-363>, ACCESSORY<id-373>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-385>(MOTOR<id-381>, BODY<id-362>, ACCESSORY<id-375>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-385>(MOTOR<id-381>, BODY<id-362>, ACCESSORY<id-375>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-384>(MOTOR<id-379>, BODY<id-363>, ACCESSORY<id-373>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-387>(MOTOR<id-383>, BODY<id-365>, ACCESSORY<id-374>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-387>(MOTOR<id-383>, BODY<id-365>, ACCESSORY<id-374>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-393>(MOTOR<id-382>, BODY<id-366>, ACCESSORY<id-386>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-393>(MOTOR<id-382>, BODY<id-366>, ACCESSORY<id-386>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-396>(MOTOR<id-388>, BODY<id-368>, ACCESSORY<id-389>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-396>(MOTOR<id-388>, BODY<id-368>, ACCESSORY<id-389>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-397>(MOTOR<id-390>, BODY<id-391>, ACCESSORY<id-392>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-397>(MOTOR<id-390>, BODY<id-391>, ACCESSORY<id-392>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-399>(MOTOR<id-394>, BODY<id-398>, ACCESSORY<id-395>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:55 AM Log.CarFactoryLogger log
+INFO: CAR<id-399>(MOTOR<id-394>, BODY<id-398>, ACCESSORY<id-395>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-410>(MOTOR<id-409>, BODY<id-400>, ACCESSORY<id-407>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-410>(MOTOR<id-409>, BODY<id-400>, ACCESSORY<id-407>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-417>(MOTOR<id-416>, BODY<id-401>, ACCESSORY<id-411>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-417>(MOTOR<id-416>, BODY<id-401>, ACCESSORY<id-411>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-420>(MOTOR<id-418>, BODY<id-402>, ACCESSORY<id-412>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-421>(MOTOR<id-419>, BODY<id-403>, ACCESSORY<id-413>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-420>(MOTOR<id-418>, BODY<id-402>, ACCESSORY<id-412>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-421>(MOTOR<id-419>, BODY<id-403>, ACCESSORY<id-413>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-425>(MOTOR<id-422>, BODY<id-404>, ACCESSORY<id-414>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-425>(MOTOR<id-422>, BODY<id-404>, ACCESSORY<id-414>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-426>(MOTOR<id-424>, BODY<id-405>, ACCESSORY<id-415>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-426>(MOTOR<id-424>, BODY<id-405>, ACCESSORY<id-415>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-435>(MOTOR<id-427>, BODY<id-406>, ACCESSORY<id-423>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-435>(MOTOR<id-427>, BODY<id-406>, ACCESSORY<id-423>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-436>(MOTOR<id-428>, BODY<id-408>, ACCESSORY<id-430>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-436>(MOTOR<id-428>, BODY<id-408>, ACCESSORY<id-430>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-437>(MOTOR<id-429>, BODY<id-432>, ACCESSORY<id-433>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-437>(MOTOR<id-429>, BODY<id-432>, ACCESSORY<id-433>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-439>(MOTOR<id-431>, BODY<id-438>, ACCESSORY<id-434>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:56 AM Log.CarFactoryLogger log
+INFO: CAR<id-439>(MOTOR<id-431>, BODY<id-438>, ACCESSORY<id-434>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-450>(MOTOR<id-447>, BODY<id-440>, ACCESSORY<id-448>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-450>(MOTOR<id-447>, BODY<id-440>, ACCESSORY<id-448>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-457>(MOTOR<id-456>, BODY<id-441>, ACCESSORY<id-451>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-457>(MOTOR<id-456>, BODY<id-441>, ACCESSORY<id-451>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-460>(MOTOR<id-458>, BODY<id-442>, ACCESSORY<id-452>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-461>(MOTOR<id-459>, BODY<id-443>, ACCESSORY<id-453>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-460>(MOTOR<id-458>, BODY<id-442>, ACCESSORY<id-452>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-461>(MOTOR<id-459>, BODY<id-443>, ACCESSORY<id-453>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-467>(MOTOR<id-464>, BODY<id-444>, ACCESSORY<id-454>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-467>(MOTOR<id-464>, BODY<id-444>, ACCESSORY<id-454>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-468>(MOTOR<id-465>, BODY<id-445>, ACCESSORY<id-455>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-468>(MOTOR<id-465>, BODY<id-445>, ACCESSORY<id-455>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-475>(MOTOR<id-466>, BODY<id-446>, ACCESSORY<id-462>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-475>(MOTOR<id-466>, BODY<id-446>, ACCESSORY<id-462>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-476>(MOTOR<id-469>, BODY<id-449>, ACCESSORY<id-463>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-476>(MOTOR<id-469>, BODY<id-449>, ACCESSORY<id-463>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-477>(MOTOR<id-470>, BODY<id-472>, ACCESSORY<id-471>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-477>(MOTOR<id-470>, BODY<id-472>, ACCESSORY<id-471>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-479>(MOTOR<id-473>, BODY<id-478>, ACCESSORY<id-474>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:57 AM Log.CarFactoryLogger log
+INFO: CAR<id-479>(MOTOR<id-473>, BODY<id-478>, ACCESSORY<id-474>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-490>(MOTOR<id-489>, BODY<id-480>, ACCESSORY<id-488>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-490>(MOTOR<id-489>, BODY<id-480>, ACCESSORY<id-488>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-497>(MOTOR<id-496>, BODY<id-481>, ACCESSORY<id-491>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-497>(MOTOR<id-496>, BODY<id-481>, ACCESSORY<id-491>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-500>(MOTOR<id-498>, BODY<id-482>, ACCESSORY<id-492>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-500>(MOTOR<id-498>, BODY<id-482>, ACCESSORY<id-492>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-501>(MOTOR<id-499>, BODY<id-483>, ACCESSORY<id-493>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-501>(MOTOR<id-499>, BODY<id-483>, ACCESSORY<id-493>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-506>(MOTOR<id-502>, BODY<id-484>, ACCESSORY<id-494>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-506>(MOTOR<id-502>, BODY<id-484>, ACCESSORY<id-494>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-510>(MOTOR<id-505>, BODY<id-485>, ACCESSORY<id-495>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-510>(MOTOR<id-505>, BODY<id-485>, ACCESSORY<id-495>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-515>(MOTOR<id-504>, BODY<id-486>, ACCESSORY<id-507>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-515>(MOTOR<id-504>, BODY<id-486>, ACCESSORY<id-507>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-516>(MOTOR<id-503>, BODY<id-487>, ACCESSORY<id-508>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-516>(MOTOR<id-503>, BODY<id-487>, ACCESSORY<id-508>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-517>(MOTOR<id-509>, BODY<id-512>, ACCESSORY<id-511>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-517>(MOTOR<id-509>, BODY<id-512>, ACCESSORY<id-511>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-519>(MOTOR<id-514>, BODY<id-518>, ACCESSORY<id-513>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:58 AM Log.CarFactoryLogger log
+INFO: CAR<id-519>(MOTOR<id-514>, BODY<id-518>, ACCESSORY<id-513>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-530>(MOTOR<id-529>, BODY<id-520>, ACCESSORY<id-528>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-530>(MOTOR<id-529>, BODY<id-520>, ACCESSORY<id-528>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-537>(MOTOR<id-536>, BODY<id-521>, ACCESSORY<id-531>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-537>(MOTOR<id-536>, BODY<id-521>, ACCESSORY<id-531>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-540>(MOTOR<id-538>, BODY<id-522>, ACCESSORY<id-532>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-540>(MOTOR<id-538>, BODY<id-522>, ACCESSORY<id-532>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-541>(MOTOR<id-539>, BODY<id-523>, ACCESSORY<id-533>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-541>(MOTOR<id-539>, BODY<id-523>, ACCESSORY<id-533>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-545>(MOTOR<id-543>, BODY<id-524>, ACCESSORY<id-534>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-545>(MOTOR<id-543>, BODY<id-524>, ACCESSORY<id-534>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-550>(MOTOR<id-546>, BODY<id-525>, ACCESSORY<id-535>)
+ was created by Thread 63
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-550>(MOTOR<id-546>, BODY<id-525>, ACCESSORY<id-535>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-554>(MOTOR<id-547>, BODY<id-526>, ACCESSORY<id-542>)
+ was created by Thread 64
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-554>(MOTOR<id-547>, BODY<id-526>, ACCESSORY<id-542>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-556>(MOTOR<id-548>, BODY<id-527>, ACCESSORY<id-544>)
+ was created by Thread 44
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-556>(MOTOR<id-548>, BODY<id-527>, ACCESSORY<id-544>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-557>(MOTOR<id-549>, BODY<id-552>, ACCESSORY<id-551>)
+ was created by Thread 66
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-557>(MOTOR<id-549>, BODY<id-552>, ACCESSORY<id-551>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-559>(MOTOR<id-553>, BODY<id-558>, ACCESSORY<id-555>)
+ was created by Thread 65
+
+Jun 05, 2021 11:31:59 AM Log.CarFactoryLogger log
+INFO: CAR<id-559>(MOTOR<id-553>, BODY<id-558>, ACCESSORY<id-555>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-570>(MOTOR<id-567>, BODY<id-560>, ACCESSORY<id-568>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-570>(MOTOR<id-567>, BODY<id-560>, ACCESSORY<id-568>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-577>(MOTOR<id-576>, BODY<id-561>, ACCESSORY<id-571>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-577>(MOTOR<id-576>, BODY<id-561>, ACCESSORY<id-571>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-580>(MOTOR<id-578>, BODY<id-562>, ACCESSORY<id-572>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-580>(MOTOR<id-578>, BODY<id-562>, ACCESSORY<id-572>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-581>(MOTOR<id-579>, BODY<id-563>, ACCESSORY<id-573>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-581>(MOTOR<id-579>, BODY<id-563>, ACCESSORY<id-573>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-586>(MOTOR<id-582>, BODY<id-564>, ACCESSORY<id-574>)
+ was created by Thread 66
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-586>(MOTOR<id-582>, BODY<id-564>, ACCESSORY<id-574>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-590>(MOTOR<id-585>, BODY<id-565>, ACCESSORY<id-575>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-590>(MOTOR<id-585>, BODY<id-565>, ACCESSORY<id-575>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-595>(MOTOR<id-588>, BODY<id-566>, ACCESSORY<id-584>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-595>(MOTOR<id-588>, BODY<id-566>, ACCESSORY<id-584>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-596>(MOTOR<id-583>, BODY<id-569>, ACCESSORY<id-587>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-596>(MOTOR<id-583>, BODY<id-569>, ACCESSORY<id-587>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-597>(MOTOR<id-589>, BODY<id-591>, ACCESSORY<id-592>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-597>(MOTOR<id-589>, BODY<id-591>, ACCESSORY<id-592>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-599>(MOTOR<id-593>, BODY<id-598>, ACCESSORY<id-594>)
+ was created by Thread 66
+
+Jun 05, 2021 11:32:00 AM Log.CarFactoryLogger log
+INFO: CAR<id-599>(MOTOR<id-593>, BODY<id-598>, ACCESSORY<id-594>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-610>(MOTOR<id-609>, BODY<id-600>, ACCESSORY<id-608>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-610>(MOTOR<id-609>, BODY<id-600>, ACCESSORY<id-608>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-617>(MOTOR<id-616>, BODY<id-601>, ACCESSORY<id-611>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-617>(MOTOR<id-616>, BODY<id-601>, ACCESSORY<id-611>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-620>(MOTOR<id-618>, BODY<id-602>, ACCESSORY<id-612>)
+ was created by Thread 66
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-621>(MOTOR<id-619>, BODY<id-603>, ACCESSORY<id-613>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-620>(MOTOR<id-618>, BODY<id-602>, ACCESSORY<id-612>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-621>(MOTOR<id-619>, BODY<id-603>, ACCESSORY<id-613>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-623>(MOTOR<id-622>, BODY<id-604>, ACCESSORY<id-614>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-623>(MOTOR<id-622>, BODY<id-604>, ACCESSORY<id-614>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-625>(MOTOR<id-624>, BODY<id-605>, ACCESSORY<id-615>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-625>(MOTOR<id-624>, BODY<id-605>, ACCESSORY<id-615>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-635>(MOTOR<id-626>, BODY<id-606>, ACCESSORY<id-629>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-635>(MOTOR<id-626>, BODY<id-606>, ACCESSORY<id-629>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-636>(MOTOR<id-628>, BODY<id-607>, ACCESSORY<id-630>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-636>(MOTOR<id-628>, BODY<id-607>, ACCESSORY<id-630>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-637>(MOTOR<id-627>, BODY<id-632>, ACCESSORY<id-631>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-637>(MOTOR<id-627>, BODY<id-632>, ACCESSORY<id-631>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-639>(MOTOR<id-633>, BODY<id-638>, ACCESSORY<id-634>)
+ was created by Thread 66
+
+Jun 05, 2021 11:32:01 AM Log.CarFactoryLogger log
+INFO: CAR<id-639>(MOTOR<id-633>, BODY<id-638>, ACCESSORY<id-634>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-650>(MOTOR<id-647>, BODY<id-640>, ACCESSORY<id-649>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-650>(MOTOR<id-647>, BODY<id-640>, ACCESSORY<id-649>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-657>(MOTOR<id-656>, BODY<id-641>, ACCESSORY<id-651>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-657>(MOTOR<id-656>, BODY<id-641>, ACCESSORY<id-651>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-660>(MOTOR<id-658>, BODY<id-642>, ACCESSORY<id-652>)
+ was created by Thread 66
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-661>(MOTOR<id-659>, BODY<id-643>, ACCESSORY<id-653>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-660>(MOTOR<id-658>, BODY<id-642>, ACCESSORY<id-652>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-661>(MOTOR<id-659>, BODY<id-643>, ACCESSORY<id-653>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-663>(MOTOR<id-662>, BODY<id-644>, ACCESSORY<id-654>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-663>(MOTOR<id-662>, BODY<id-644>, ACCESSORY<id-654>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-671>(MOTOR<id-664>, BODY<id-645>, ACCESSORY<id-655>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-671>(MOTOR<id-664>, BODY<id-645>, ACCESSORY<id-655>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-675>(MOTOR<id-667>, BODY<id-646>, ACCESSORY<id-665>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-675>(MOTOR<id-667>, BODY<id-646>, ACCESSORY<id-665>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-676>(MOTOR<id-666>, BODY<id-648>, ACCESSORY<id-668>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-676>(MOTOR<id-666>, BODY<id-648>, ACCESSORY<id-668>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-677>(MOTOR<id-670>, BODY<id-674>, ACCESSORY<id-669>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-677>(MOTOR<id-670>, BODY<id-674>, ACCESSORY<id-669>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-679>(MOTOR<id-673>, BODY<id-678>, ACCESSORY<id-672>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:02 AM Log.CarFactoryLogger log
+INFO: CAR<id-679>(MOTOR<id-673>, BODY<id-678>, ACCESSORY<id-672>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-689>(MOTOR<id-688>, BODY<id-680>, ACCESSORY<id-687>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-689>(MOTOR<id-688>, BODY<id-680>, ACCESSORY<id-687>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-697>(MOTOR<id-696>, BODY<id-681>, ACCESSORY<id-691>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-697>(MOTOR<id-696>, BODY<id-681>, ACCESSORY<id-691>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-699>(MOTOR<id-698>, BODY<id-682>, ACCESSORY<id-692>)
+ was created by Thread 66
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-699>(MOTOR<id-698>, BODY<id-682>, ACCESSORY<id-692>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-701>(MOTOR<id-700>, BODY<id-683>, ACCESSORY<id-693>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-701>(MOTOR<id-700>, BODY<id-683>, ACCESSORY<id-693>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-703>(MOTOR<id-702>, BODY<id-684>, ACCESSORY<id-695>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-703>(MOTOR<id-702>, BODY<id-684>, ACCESSORY<id-695>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-706>(MOTOR<id-704>, BODY<id-685>, ACCESSORY<id-694>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-706>(MOTOR<id-704>, BODY<id-685>, ACCESSORY<id-694>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-715>(MOTOR<id-707>, BODY<id-686>, ACCESSORY<id-705>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-715>(MOTOR<id-707>, BODY<id-686>, ACCESSORY<id-705>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-716>(MOTOR<id-709>, BODY<id-690>, ACCESSORY<id-708>)
+ was created by Thread 66
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-716>(MOTOR<id-709>, BODY<id-690>, ACCESSORY<id-708>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-717>(MOTOR<id-711>, BODY<id-713>, ACCESSORY<id-710>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-717>(MOTOR<id-711>, BODY<id-713>, ACCESSORY<id-710>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-719>(MOTOR<id-712>, BODY<id-718>, ACCESSORY<id-714>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:03 AM Log.CarFactoryLogger log
+INFO: CAR<id-719>(MOTOR<id-712>, BODY<id-718>, ACCESSORY<id-714>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-730>(MOTOR<id-729>, BODY<id-720>, ACCESSORY<id-727>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-730>(MOTOR<id-729>, BODY<id-720>, ACCESSORY<id-727>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-737>(MOTOR<id-734>, BODY<id-721>, ACCESSORY<id-731>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-737>(MOTOR<id-734>, BODY<id-721>, ACCESSORY<id-731>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-739>(MOTOR<id-738>, BODY<id-722>, ACCESSORY<id-732>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-739>(MOTOR<id-738>, BODY<id-722>, ACCESSORY<id-732>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-741>(MOTOR<id-740>, BODY<id-723>, ACCESSORY<id-733>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-741>(MOTOR<id-740>, BODY<id-723>, ACCESSORY<id-733>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-743>(MOTOR<id-742>, BODY<id-724>, ACCESSORY<id-735>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-743>(MOTOR<id-742>, BODY<id-724>, ACCESSORY<id-735>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-748>(MOTOR<id-744>, BODY<id-725>, ACCESSORY<id-736>)
+ was created by Thread 66
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-748>(MOTOR<id-744>, BODY<id-725>, ACCESSORY<id-736>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-752>(MOTOR<id-747>, BODY<id-726>, ACCESSORY<id-745>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-755>(MOTOR<id-746>, BODY<id-728>, ACCESSORY<id-749>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-755>(MOTOR<id-746>, BODY<id-728>, ACCESSORY<id-749>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-756>(MOTOR<id-751>, BODY<id-754>, ACCESSORY<id-750>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-752>(MOTOR<id-747>, BODY<id-726>, ACCESSORY<id-745>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-756>(MOTOR<id-751>, BODY<id-754>, ACCESSORY<id-750>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-759>(MOTOR<id-757>, BODY<id-758>, ACCESSORY<id-753>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:04 AM Log.CarFactoryLogger log
+INFO: CAR<id-759>(MOTOR<id-757>, BODY<id-758>, ACCESSORY<id-753>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-769>(MOTOR<id-768>, BODY<id-760>, ACCESSORY<id-767>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-769>(MOTOR<id-768>, BODY<id-760>, ACCESSORY<id-767>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-778>(MOTOR<id-775>, BODY<id-761>, ACCESSORY<id-771>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-779>(MOTOR<id-777>, BODY<id-762>, ACCESSORY<id-772>)
+ was created by Thread 66
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-778>(MOTOR<id-775>, BODY<id-761>, ACCESSORY<id-771>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-779>(MOTOR<id-777>, BODY<id-762>, ACCESSORY<id-772>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-785>(MOTOR<id-780>, BODY<id-763>, ACCESSORY<id-773>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-785>(MOTOR<id-780>, BODY<id-763>, ACCESSORY<id-773>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-786>(MOTOR<id-781>, BODY<id-764>, ACCESSORY<id-774>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-786>(MOTOR<id-781>, BODY<id-764>, ACCESSORY<id-774>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-787>(MOTOR<id-784>, BODY<id-765>, ACCESSORY<id-776>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-787>(MOTOR<id-784>, BODY<id-765>, ACCESSORY<id-776>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-794>(MOTOR<id-788>, BODY<id-770>, ACCESSORY<id-789>)
+ was created by Thread 66
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-795>(MOTOR<id-790>, BODY<id-792>, ACCESSORY<id-791>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-796>(MOTOR<id-782>, BODY<id-766>, ACCESSORY<id-783>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-794>(MOTOR<id-788>, BODY<id-770>, ACCESSORY<id-789>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-795>(MOTOR<id-790>, BODY<id-792>, ACCESSORY<id-791>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-796>(MOTOR<id-782>, BODY<id-766>, ACCESSORY<id-783>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-799>(MOTOR<id-793>, BODY<id-798>, ACCESSORY<id-797>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:05 AM Log.CarFactoryLogger log
+INFO: CAR<id-799>(MOTOR<id-793>, BODY<id-798>, ACCESSORY<id-797>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-810>(MOTOR<id-808>, BODY<id-800>, ACCESSORY<id-807>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-810>(MOTOR<id-808>, BODY<id-800>, ACCESSORY<id-807>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-818>(MOTOR<id-814>, BODY<id-801>, ACCESSORY<id-811>)
+ was created by Thread 66
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-819>(MOTOR<id-816>, BODY<id-802>, ACCESSORY<id-812>)
+ was created by Thread 65
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-818>(MOTOR<id-814>, BODY<id-801>, ACCESSORY<id-811>)
+ was put to car storage by Thread 66
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-819>(MOTOR<id-816>, BODY<id-802>, ACCESSORY<id-812>)
+ was put to car storage by Thread 65
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-824>(MOTOR<id-820>, BODY<id-803>, ACCESSORY<id-813>)
+ was created by Thread 64
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-824>(MOTOR<id-820>, BODY<id-803>, ACCESSORY<id-813>)
+ was put to car storage by Thread 64
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-825>(MOTOR<id-822>, BODY<id-804>, ACCESSORY<id-815>)
+ was created by Thread 44
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-825>(MOTOR<id-822>, BODY<id-804>, ACCESSORY<id-815>)
+ was put to car storage by Thread 44
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-827>(MOTOR<id-821>, BODY<id-805>, ACCESSORY<id-817>)
+ was created by Thread 63
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-827>(MOTOR<id-821>, BODY<id-805>, ACCESSORY<id-817>)
+ was put to car storage by Thread 63
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-836>(MOTOR<id-826>, BODY<id-806>, ACCESSORY<id-823>)
+ was created by Thread 66
+
+Jun 05, 2021 11:32:06 AM Log.CarFactoryLogger log
+INFO: CAR<id-836>(MOTOR<id-826>, BODY<id-806>, ACCESSORY<id-823>)
+ was put to car storage by Thread 66
+
